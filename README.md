@@ -47,16 +47,34 @@ _The **myAlpaca** is an app that will give students who are studying abroad an e
 
 ### Goals
 
-- _Create a NoSQL database with MongDB, to host all user information._
+- _Create a NoSQL database with MongoDB, to host all user information._
 - _Create CRUD functionality for creating, updating, reading and deleting user on the backend_
-- _Use  the React framework to imprement front end CRUD founctionality from registering a user, updating information and deactivating/deleting an account_
+- _Use  the React framework to imprement front end CRUD functionality from registering a user, updating information and deactivating/deleting an account_
 - _Deploying the app to Netlify or other similar services_
 
 <br>
 
 ### Schema
-```
-insert here
+``` 
+const User = new Schema(
+  {
+    username: { type: String, required: true },
+    email: { type: String, required: true },
+    password: { type: String, required: true },
+    confirm_password: { type: String, required: true },
+    from_location: {type: String},
+    to_location: {type: String},
+    education: {type: String},
+    area_of_study: {type: String},
+    interests: {type: String},
+    hobbies: {type: String},
+    assistance: {type: String},
+    priorities: {type: String}
+      },
+  { timestamps: true }
+)
+
+module.exports = mongoose.model('users', User)
 ```
 
 <br>
