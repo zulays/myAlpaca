@@ -1,8 +1,4 @@
-# myAlpaca
-
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, I recommend cloning this wiki and copy/pasting the raw template code.
+#  myAlpaca
 
 - [Overview](#Overview)
   - [Team Members](#Team-Members)
@@ -27,11 +23,12 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_**myAlpaca** is an app that will give students who are studying abroad an easy way to maneuver their new environment. The app will allow users to register for an account and create profiles that include  the  parameters of their choice such as their area of studies, interests, hobbies, and priorities. After registration and creation, the user is directed to their profile home page, where they are given options of learning more about the  local events, weather, restaurants, currency, transportation, languages, culture, and shopping in their current area
+_
 
 ### Team Members
 
-Created, designed, and developed by [James Madison](https://github.com/mishakessler), [George Washington](https://github.com/mishakessler), and [John Lansing, Jr.](https://github.com/mishakessler) (Git Czar) for the General Assembly Software Engineering Immersive (November '19 Cohort) Unit 3 Group Project.
+Created, designed, and developed by [Misbah Ali](https://github.com/maliccny), [Jason Kang](https://github.com/kangja), and [Zulay Scottborgh](https://github.com/zulays) (Git Czar) for the General Assembly Software Engineering Immersive (July ’20 Cohort) Unit 3 Group Project.
 
 ### Team Expectations
 
@@ -39,7 +36,7 @@ Team values and expectations can be found on our project's [Group Expectation Se
 
 ### Permissions
 
-Digital assets used with full licensing and permission from [Death to Stock Photo](), [Freepik](), and [Unsplash](). Custom digital design and branding by John Lansing. Digital assets stored locally and on [Imgur]().
+Digital assets used with full licensing and permission from  [Unsplash]().
 
 <br>
 
@@ -47,17 +44,16 @@ Digital assets used with full licensing and permission from [Death to Stock Phot
 
 > The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **myAlpaca** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _Give students who are studying abroad an easy way to maneuver their new environment._
+- _Allow users to register for an account and create profiles that include  the  parameters of their choice_
+- _Give resources to learn more about the local culture and events_
+- _Provide currency exchange rates and local weather._
 
 <br>
 
@@ -67,11 +63,11 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Powers the application functionality/environment_ |
+|   React Router   | _Allows application to be navigable without having to refresh the page._ |
+| MongoDB | _A document-oriented NoSQL database used for high volume data storage._ |
+|     Express      | _A Node.js web application server framework, designed for building multi-page web applications_ |
+|  Express Router  | _Express router is a class which helps us to create router handlers_ |
 
 <br>
 
@@ -81,45 +77,61 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![Dummy Link](url)
+![myAlpaca Wireframe + Style Guide](https://scene.zeplin.io/project/5ef5492ccbfa90a42c493b76)
 
-- Desktop Landing
+- Desktop Layout for Home Page, Register User, Build Profile, Delete Profile
 
-![Dummy Link](url)
-
-- Desktop Hero
-
-![Dummy Link](url)
-
-- Resource Index
-
-![Dummy Link](url)
-
-- Resource Show
-
-![Dummy Link](url)
-
-- Tablet Resource Index
-
-![Dummy Link](url)
-
-- Mobile Resource Index
 
 #### Component Hierarchy
 
 > Use this section to define your React components and the data architecture of your app.
 
 ``` structure
-
+####front end
 src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ shared/
+            |__ Footer/
+                  |__ Footer.jsx
+                  |__ Footer.css     
+            |__ Header/
+                  |__ Header.jsx
+                  |__ Header.css  
+|__ screens/
+      |__ RegisterPage/
+            |__ RegisterPage.jsx
+            |__ RegisterPage.css
+      |__ UserCreate/
+            |__ UserCreate.jsx
+            |__ UserCreate.css
+      |__ UserEdit/
+            |__ UserEdit.jsx
+            |__ UserEdit.css
+      |__ UserDelete/
+            |__ UserDelete.jsx
+            |__ UserDelete.css
+      |__ Home/
 |__ services/
+      |__ apiConfig.jsx
+      |__ users.jsx
+|__ utils/
+|__ App.js
+|__ index.js
+
+####backend
+|__ components/
+    |__ users.js
+|__ db/
+    |__ connection.js
+|__ models/
+    |__ user.js
+|__ routes/
+    |__ users.js
+|__ seed/
+    |__ users.js
+|__ .gitignore
+|__ package.json
+|__ server.js
 
 ```
 
@@ -153,19 +165,29 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model.
+[image:6BF7D7C6-BDC4-400F-8AB4-FDCF12EC63B3-13448-00000B2BDBE7A881/Screen Shot 2020-07-16 at 11.23.44 AM.png]
 
-#### Data Heirarchy
-
-> Use this section to display the database, table, and attribute heirarchy.
+#### Data Hierarchy
 
 ``` structure
-
-database_db
-|__ users/
-|__ resources/
-|__ posts/
-
+controllers
+|__ users.js
+|
+db
+|__ connection.js
+|
+models
+|__ user.js
+|
+routes
+|__ users.js
+|
+seed
+|__ users.js
+|
+.gitignore
+package.json
+server.js
 ```
 
 <br>
@@ -175,6 +197,12 @@ database_db
 ## Post-MVP
 
 > Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+
+The goals for this project post-MVP are as follows:
+* Homepage build-out
+* Log In Page?
+* Restaurant Page
+* Search Bar functionality
 
 ***
 
