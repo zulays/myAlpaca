@@ -12,7 +12,7 @@ app.use(cors())
 app.use(bodyParser.json())
 app.use(logger("dev"))
 
-app.use("/", usersRoutes)
+app.use("/api", usersRoutes)
 
 db.on("error", console.error.bind(console, "MongoDB connection error:"))
 
