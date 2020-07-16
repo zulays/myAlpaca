@@ -6,6 +6,7 @@
   - [Permissions](#Permissions)
 - [MVP](#MVP)
   - [Goals](#Goals)
+  - [Schema](#Schema)
   - [Libraries](#Libraries)
   - [Client (Front End)](#Client-Front-End)
     - [Wireframes](#Wireframes)
@@ -14,7 +15,7 @@
     - [Component Estimates](#Component-Estimates)
   - [Server (Back End)](#Server-Back-End)
     - [ERD Model](#ERD-Model)
-    - [Data Heirarchy](#Data-Heirarchy)
+    - [Data Hierarchy](#Data-Hierarchy)
 - [Post-MVP](#Post-MVP)
 - [Code Showcase](#Code-Showcase)
 - [Code Issues & Resolutions](#Code-Issues--Resolutions)
@@ -50,6 +51,13 @@ _The **myAlpaca** is an app that will give students who are studying abroad an e
 - _Create CRUD functionality for creating, updating, reading and deleting user on the backend_
 - _Use  the React framework to imprement front end CRUD founctionality from registering a user, updating information and deactivating/deleting an account_
 - _Deploying the app to Netlify or other similar services_
+
+<br>
+
+### Schema
+```
+insert here
+```
 
 <br>
 
