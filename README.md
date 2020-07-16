@@ -23,8 +23,6 @@
 
 ## Overview
 
-_**myAlpaca** is an app that will give students who are studying abroad an easy way to maneuver their new environment. The app will allow users to register for an account and create profiles that include  the  parameters of their choice such as their area of studies, interests, hobbies, and priorities. After registration and creation, the user is directed to their profile home page, where they are given options of learning more about the  local events, weather, restaurants, currency, transportation, languages, culture, and shopping in their current area_
-
 ### Team Members
 
 Created, designed, and developed by [Misbah Ali](https://github.com/maliccny), [Jason Kang](https://github.com/kangja), and [Zulay Scottborgh](https://github.com/zulays) (Git Czar) for the General Assembly Software Engineering Immersive (July ’20 Cohort) Unit 3 Group Project.
@@ -41,16 +39,17 @@ Digital assets used with full licensing and permission from  [Unsplash]().
 
 ## MVP
 
-_The **myAlpaca** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+
+_The **myAlpaca** is an app that will give students who are studying abroad an easy way to maneuver their new environment. The app will allow users to register for an account and create profiles that include  the  parameters of their choice such as their area of studies, interests, hobbies, and priorities._
 
 <br>
 
 ### Goals
 
-- _Give students who are studying abroad an easy way to maneuver their new environment._
-- _Allow users to register for an account and create profiles that include  the  parameters of their choice_
-- _Give resources to learn more about the local culture and events_
-- _Provide currency exchange rates and local weather._
+- _Create a NoSQL database with MongDB, to host all user information._
+- _Create CRUD functionality for creating, updating, reading and deleting user on the backend_
+- _Use  the React framework to imprement front end CRUD founctionality from registering a user, updating information and deactivating/deleting an account_
+- _Deploying the app to Netlify or other similar services_
 
 <br>
 
@@ -153,7 +152,7 @@ src
 
 #### ERD Model
 
-![Whimsical Diagram](image:6BF7D7C6-BDC4-400F-8AB4-FDCF12EC63B3-13448-00000B2BDBE7A881/Screen Shot 2020-07-16 at 11.23.44 AM.png)
+[Whimsical Diagram](https://res.cloudinary.com/zumariposa/image/upload/v1594916674/Screen_Shot_2020-07-16_at_11.23.44_AM_z0djat.png)
 
 #### Data Hierarchy
 
