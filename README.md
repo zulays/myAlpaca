@@ -153,7 +153,7 @@ src
 
 #### ERD Model
 
-[image:6BF7D7C6-BDC4-400F-8AB4-FDCF12EC63B3-13448-00000B2BDBE7A881/Screen Shot 2020-07-16 at 11.23.44 AM.png]
+![Whimsical Diagram](image:6BF7D7C6-BDC4-400F-8AB4-FDCF12EC63B3-13448-00000B2BDBE7A881/Screen Shot 2020-07-16 at 11.23.44 AM.png)
 
 #### Data Hierarchy
 
@@ -183,8 +183,6 @@ server.js
 ***
 
 ## Post-MVP
-
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
 
 The goals for this project post-MVP are as follows:
 * Homepage build-out
