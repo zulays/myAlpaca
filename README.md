@@ -68,7 +68,7 @@ const User = new Schema(
     interests: {type: Array},
     hobbies: {type: Array},
     assistance: {type: Array},
-    priorities: {type: String}
+    priorities: {type: Array}
       },
   { timestamps: true }
 )
