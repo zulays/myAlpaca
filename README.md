@@ -41,8 +41,6 @@ Digital assets used with full licensing and permission from  [Unsplash]().
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
 _The **myAlpaca** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
 
 <br>
@@ -58,8 +56,6 @@ _The **myAlpaca** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. P
 
 ### Libraries
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project.
-
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
 |      React       | _Powers the application functionality/environment_ |
@@ -74,16 +70,12 @@ _The **myAlpaca** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. P
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views.
-
 [myAlpaca Wireframe + Style Guide](https://scene.zeplin.io/project/5ef5492ccbfa90a42c493b76)
 
 - Desktop Layout for Home Page, Register User, Build Profile, Delete Profile
 
-
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app.
 
 ``` structure
 ####front end
@@ -136,7 +128,6 @@ src
 
 #### Component Breakdown
 
-> Use this section to go into further depth regarding your components, including breaking down the components as stateless or stateful, and considering the passing of data between those components.
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
@@ -148,7 +139,6 @@ src
 
 #### Component Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -156,7 +146,6 @@ src
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evalute possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
