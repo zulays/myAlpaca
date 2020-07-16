@@ -23,8 +23,7 @@
 
 ## Overview
 
-_**myAlpaca** is an app that will give students who are studying abroad an easy way to maneuver their new environment. The app will allow users to register for an account and create profiles that include  the  parameters of their choice such as their area of studies, interests, hobbies, and priorities. After registration and creation, the user is directed to their profile home page, where they are given options of learning more about the  local events, weather, restaurants, currency, transportation, languages, culture, and shopping in their current area
-_
+_**myAlpaca** is an app that will give students who are studying abroad an easy way to maneuver their new environment. The app will allow users to register for an account and create profiles that include  the  parameters of their choice such as their area of studies, interests, hobbies, and priorities. After registration and creation, the user is directed to their profile home page, where they are given options of learning more about the  local events, weather, restaurants, currency, transportation, languages, culture, and shopping in their current area_
 
 ### Team Members
 
@@ -77,7 +76,7 @@ _The **myAlpaca** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. P
 
 > Use the Wireframes section to display desktop, tablet and mobile views.
 
-![myAlpaca Wireframe + Style Guide](https://scene.zeplin.io/project/5ef5492ccbfa90a42c493b76)
+[myAlpaca Wireframe + Style Guide](https://scene.zeplin.io/project/5ef5492ccbfa90a42c493b76)
 
 - Desktop Layout for Home Page, Register User, Build Profile, Delete Profile
 
