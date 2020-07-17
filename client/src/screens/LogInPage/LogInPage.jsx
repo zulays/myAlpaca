@@ -1,22 +1,24 @@
 import React from "react"
 import "./LogInPage.css"
+// import Header from "./components/shared/Header/Header"
+// import Footer from "./components/shared/Footer/Footer"
 
 const LogInPage = () => {
 
   return (
     <div>
 
-
+      {/* <Header /> */}
       <main>
         <h1>Log In</h1>
-        <h3>Don't have an account? <span>Register</span> today!</h3>
+        <p>Don't have an account? <span className="register">Register</span> today!</p>
         <form>
-          <h4>Username or Email Address</h4>
+          <label>Username or Email Address</label>
           <input type="text" className="inputs" />
-          <h4>Password</h4>
+          <label>Password</label>
           <input type="password" className="inputs" />
-          <p><span font-size="10px">Forgot password?</span></p>
-          <input type="checkbox" className="checkbox" /> <label>Remember Me</label>
+          <p className="forgot-pass">Forgot password?</p>
+          <input type="checkbox" className="checkbox" /> <label className="checkbox-label">Remember Me</label>
           <button className="login-button">Log In</button>
         </form>
       </main>
