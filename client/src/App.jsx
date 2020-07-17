@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Route, Switch } from "react-router-dom"
+import { Route} from "react-router-dom"
 import LogInPage from "./screens/LogInPage/LogInPage"
 // import ManageProfile from "./screens/ManageProfile/ManageProfile"
 import UserCreate from "./screens/UserCreate/UserCreate"
