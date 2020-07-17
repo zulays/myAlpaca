@@ -39,7 +39,7 @@ class UserCreate extends Component {
     const { user, created } = this.state;
 
     if (created) {
-      return <Redirect to={`/users`} />;
+      return <Redirect to={`/useredit`} />;
     }
     return (
       <div className="container">
