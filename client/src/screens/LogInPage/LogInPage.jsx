@@ -1,14 +1,14 @@
 import React from "react"
 import "./LogInPage.css"
-// import Header from "./components/shared/Header/Header"
-// import Footer from "./components/shared/Footer/Footer"
+import Header from "../../components/shared/Header/Header"
+import Footer from "../../components/shared/Footer/Footer"
 
 const LogInPage = () => {
 
   return (
     <div>
 
-      {/* <Header /> */}
+      <Header />
       <main>
         <h1>Log In</h1>
         <p>Don't have an account? <span className="register">Register</span> today!</p>
@@ -23,7 +23,7 @@ const LogInPage = () => {
         </form>
       </main>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   )
 }
