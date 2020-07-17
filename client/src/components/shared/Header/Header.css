@@ -1,9 +1,6 @@
 header{
-  /* position: absolute;
-  width:100%;
- */
   flex: 1;
-  position: fixed;
+/*   position: fixed; */
   width: 100%;
   height: 113px;
   left: -16px;
@@ -12,7 +9,11 @@ header{
 }
 
 .ticker-tape{
-  position: fixed;
+/*   position: fixed; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 39px;
   left: 0px;
@@ -31,6 +32,10 @@ header{
   color: #000000;
 }
 
+.exit-banner{
+  margin-right: 5px;
+}
+
 .icon-bar{
   display: flex;
   flex-direction: row;
@@ -43,19 +48,23 @@ header{
   text-align: left;
 }
 
+.logo{
+  height: 65px;
+}
+
 .logo-text{
   display: inline;
   text-align: left;
   color: #025700;
   font-size: 22px;
   line-height: 26px;
-  padding: 5px;
-  
+  padding: 5px; 
 }
 
 .profile-icon{
   display: inline;
-  margin-right: 20px; 
+  margin-right: 20px;
+  height: 35px;
 }
 
 .nav-bar{
