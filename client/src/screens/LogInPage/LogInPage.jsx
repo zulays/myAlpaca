@@ -4,14 +4,12 @@ import Header from "../../components/shared/Header/Header"
 import Footer from "../../components/shared/Footer/Footer"
 
 const LogInPage = () => {
-
   return (
-    <div>
-
+    <>
       <Header />
       <main>
         <h1>Log In</h1>
-        <p>Don't have an account? <span className="register">Register</span> today!</p>
+        <p>Don't have an account? <span fontWeight="700">Register</span> today!</p>
         <form>
           <label>Username or Email Address</label>
           <input type="text" className="inputs" />
@@ -22,9 +20,8 @@ const LogInPage = () => {
           <button className="login-button">Log In</button>
         </form>
       </main>
-
       <Footer />
-    </div>
+    </>
   )
 }
 

@@ -1,5 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .signup {
-  position: absolute;
   width: 77px;
   height: 26px;
   left: 556px;
@@ -8,13 +14,12 @@
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
-  line-height: 26px;
+  line-height: 75px;
   text-align: center;
   color: #000000;
 }
 
 .register {
-  position: absolute;
   width: 354px;
   height: 19px;
   left: 423px;
@@ -25,29 +30,20 @@
   line-height: 19px;
   text-align: center;
   color: #000000;
+  font-weight: none;
 }
 
 span {
   font-weight: bold;
 }
 
-.container {
-  position: absolute;
-  width: 323px;
-  height: 685px;
-  left: 433px;
-  top: 320px;
-
+form {
   background: #ffffff;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
 }
 
-/* .rectangle-20 {
-} */
-
 .rectangle-21 {
-  position: absolute;
   width: 243px;
   height: 41px;
   left: 467px;
@@ -59,7 +55,6 @@ span {
 }
 
 .rectangle-23 {
-  position: absolute;
   width: 243px;
   height: 41px;
   left: 467px;
@@ -71,7 +66,6 @@ span {
 }
 
 .rectangle-24 {
-  position: absolute;
   width: 243px;
   height: 41px;
   left: 467px;
@@ -83,7 +77,6 @@ span {
 }
 
 .rectangle-22 {
-  position: absolute;
   width: 243px;
   height: 41px;
   left: 467px;
@@ -95,18 +88,15 @@ span {
 }
 
 .rectangle-14 {
-  position: absolute;
   width: 128px;
   height: 33px;
   left: 525px;
   top: 934px;
-
   background: #025700;
   border-radius: 20px;
 }
 
 .personal {
-  position: absolute;
   width: 292px;
   height: 96px;
   left: 448px;
@@ -120,7 +110,6 @@ span {
 }
 
 .username {
-  position: absolute;
   width: 94px;
   height: 21px;
   left: 467px;
@@ -135,7 +124,6 @@ span {
 }
 
 .email {
-  position: absolute;
   width: 128px;
   height: 21px;
   left: 467px;
@@ -150,7 +138,6 @@ span {
 }
 
 .password {
-  position: absolute;
   width: 92px;
   height: 21px;
   left: 467px;
@@ -165,7 +152,6 @@ span {
 }
 
 .confirm {
-  position: absolute;
   width: 160px;
   height: 21px;
   left: 467px;
@@ -180,18 +166,15 @@ span {
 }
 
 .rectangle-14 value {
-  position: absolute;
   width: 80.79px;
   height: 19.46px;
   left: 548.6px;
   top: 940.77px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-
   color: #fbfce6;
 }
