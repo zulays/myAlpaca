@@ -4,6 +4,7 @@ import "./Header.css"
 const Header = () => {
 
   return (
+
     <header>
 
       <div className="ticker-tape">
@@ -13,6 +14,7 @@ const Header = () => {
       <div>
         <img src="#" />
         <h1>myAlpaca</h1>
+        <img src="#" alt="profile-icon" />
       </div>
 
       <ul className="nav-bar">
@@ -20,13 +22,9 @@ const Header = () => {
         <li>Reviews</li>
         <li>Contact</li>
         <li>FAQ</li>
-        <li>Log In</li>
+        <li>Profile</li>
       </ul>
 
-      <div>
-        <img src="#" alt="profile-icon" />
-        <p>Profile</p>
-      </div>
     </header>
   )
 }
