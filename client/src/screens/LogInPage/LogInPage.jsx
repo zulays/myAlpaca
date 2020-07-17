@@ -5,26 +5,7 @@ const LogInPage = () => {
 
   return (
     <div>
-      <header>
-        <div className="ticker-tape">
-          <p>Click Here to Learn More about COVID-19 Travel Advisories</p>
-        </div>
-        <div>
-          <img src="#" />
-          <h1>myAlpaca</h1>
-        </div>
-        <ul>
-          <li>About</li>
-          <li>Reviews</li>
-          <li>Contact</li>
-          <li>FAQ</li>
-        </ul>
 
-        <div>
-          <img src="#" alt="profile-icon" />
-          <p>Profile</p>
-        </div>
-      </header>
 
       <main>
         <h1>Log In</h1>
