@@ -15,11 +15,12 @@ const Header = () => {
         <h1>myAlpaca</h1>
       </div>
 
-      <ul>
+      <ul className="nav-bar">
         <li>About</li>
         <li>Reviews</li>
         <li>Contact</li>
         <li>FAQ</li>
+        <li>Log In</li>
       </ul>
 
       <div>
