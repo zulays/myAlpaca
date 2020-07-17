@@ -10,6 +10,7 @@ const Header = () => {
       <div className="ticker-tape">
         <p className="ticker-tape-text">Click Here to Learn More about COVID-19 Travel Advisories</p>
         <p className="exit-banner">x</p>
+
       </div>
 
       <div className="icon-bar">
