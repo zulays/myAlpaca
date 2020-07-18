@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./UserCreate.css";
 import { Redirect } from "react-router-dom";
 import { createUser } from "../../services/users";
+import Header from "../../components/shared/Header/Header";
+import Footer from "../../components/shared/Footer/Footer";
 
 class UserCreate extends Component {
   constructor() {
@@ -42,63 +44,66 @@ class UserCreate extends Component {
       return <Redirect to={`/useredit`} />;
     }
     return (
-      <div className="container">
-        <p className="signup">Sign Up</p>
-        <p>
-          <span className="register">Register</span> so you can save and
-          favorite any content
-        </p>
-
-        <form onSubmit={this.handleSubmit}>
-          <p className="username">Username *</p>
-          <input
-            className="rectangle-21"
-            type="text"
-            value={user.username}
-            name="username"
-            required
-            autoFocus
-            onChange={this.handleChange}
-          />
-          <p className="email"> Email Address *</p>
-          <input
-            className="rectangle-23"
-            type="text"
-            value={user.email}
-            name="email"
-            required
-            autoFocus
-            onChange={this.handleChange}
-          />
-          <p className="password">Password *</p>
-          <input
-            className="rectangle-24"
-            type="password"
-            value={user.password}
-            name="password"
-            required
-            autoFocus
-            onChange={this.handleChange}
-          />
-          <p className="confirm">Confirm Password *</p>
-          <input
-            className="rectangle-22"
-            type="password"
-            value={user.confirm}
-            name="confirm"
-            required
-            autoFocus
-            onChange={this.handleChange}
-          />
-          <p className="personal">
-            Your personal data will be used to support your experience
-            throughout using this website and to manage access to your
-            account.Please see our <span>privacy policy</span> if you have any
-            questions.
+      <>
+        <Header />
+        <div className="container">
+          <p className="signup">Sign Up</p>
+          <p className="sentence">
+            <span>Register</span> so you can save and favorite any content
           </p>
-          <input className="rectangle-14" type="submit" value="Register" />
-        </form>
-      </div>
+
+          <form onSubmit={this.handleSubmit}>
+            <p className="username">Username *</p>
+            <input
+              className="rectangle-21"
+              type="text"
+              value={user.username}
+              name="username"
+              required
+              autoFocus
+              onChange={this.handleChange}
+            />
+            <p className="email"> Email Address *</p>
+            <input
+              className="rectangle-23"
+              type="text"
+              value={user.email}
+              name="email"
+              required
+              autoFocus
+              onChange={this.handleChange}
+            />
+            <p className="password">Password *</p>
+            <input
+              className="rectangle-24"
+              type="password"
+              value={user.password}
+              name="password"
+              required
+              autoFocus
+              onChange={this.handleChange}
+            />
+            <p className="confirm">Confirm Password *</p>
+            <input
+              className="rectangle-22"
+              type="password"
+              value={user.confirm}
+              name="confirm"
+              required
+              autoFocus
+              onChange={this.handleChange}
+            />
+            <p className="personal">
+              Your personal data will be used to support your experience
+              throughout using this website and to manage access to your
+              account.Please see our <span>privacy policy</span> if you have any
+              questions.
+            </p>
+            <input className="rectangle-14" type="submit" value="Register" />
+          </form>
+        </div>
+        <Footer />
+      </>
     );
   }
 }
