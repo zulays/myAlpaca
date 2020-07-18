@@ -23,13 +23,21 @@ const LogInHeader = () => {
 
 
 
-      <ul className="nav-bar">
+      <div className="nav-bar">
+        <h3>About</h3>
+        <h3>Reviews</h3>
+        <h3>Contact</h3>
+        <h3>FAQ</h3>
+        <h3 className="side-text">Log Out</h3>
+      </div>
+
+      {/* <ul className="nav-bar">
         <li>About</li>
         <li>Reviews</li>
         <li>Contact</li>
         <li>FAQ</li>
         <li className="side-text">Log Out</li>
-      </ul>
+      </ul> */}
 
     </header>
   )
