@@ -6,10 +6,10 @@ const Footer = () =>
     <div className="links">
       <div className="myalpaca">
         <p>myAlpaca</p>
-        <p>Subscribe to receive study abroad tips and news!</p>
+        <p>Subscribe to receive study abroad tips & news!</p>
         <div>
-          <input type="email" placeholder="Email" required></input>
-          <button class="button">Subscribe</button>
+          <input className="input-sub" type="email" placeholder="Email" required></input>
+          <button className="button">Subscribe</button>
         </div>
       </div>
       <div className="social">
@@ -29,6 +29,7 @@ const Footer = () =>
         <a href="" title="FAQ" target="_blank">FAQ</a>
         <a href="" title="About" target="_blank">About</a>
         <a href="" title="Work for Us" target="_blank">Work for Us</a>
+        
       </div>
     </div>
     <p className="copyright">© 2020 Alpaca LLC.</p>
