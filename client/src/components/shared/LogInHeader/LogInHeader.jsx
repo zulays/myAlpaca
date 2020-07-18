@@ -15,7 +15,7 @@ const LogInHeader = () => {
 
       <div className="icon-bar">
         <div className="logo-set">
-          <img src="#" alt="myalpaca-logo" className="logo" />
+          <img src="#" alt="myalpaca-logo" className="myalpaca-logo" />
           <h1 className="logo-text">myAlpaca</h1>
         </div>
         <img src="#" alt="profile-icon" className="profile-icon" />
@@ -28,8 +28,11 @@ const LogInHeader = () => {
         <h3>Reviews</h3>
         <h3>Contact</h3>
         <h3>FAQ</h3>
-        <h3 className="side-text">Log Out</h3>
+        <div className="logout-text">
+          <h3>Log Out</h3>
+        </div>
       </div>
+
 
       {/* <ul className="nav-bar">
         <li>About</li>
