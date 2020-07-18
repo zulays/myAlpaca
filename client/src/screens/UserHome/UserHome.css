@@ -1,15 +1,18 @@
 table{
-  border: 2px solid #000000;
   display: flex;
   justify-content: space-between;
+  margin: 30px;
+}
+
+.rows{
+  padding: 20px;
 }
 
 td{
-  border: 2px solid #000000;
-  width: 350px;
-  height: 225px;
-  margin: 10px;
-  /* padding: 0.5rem; */
+  border: 20px solid #ffffff;
+  width: 430px;
+  height: 230px;
+  padding: 0.5rem;
   text-align: left;
   vertical-align: bottom;
   font-size: 40px;
@@ -19,7 +22,8 @@ td{
 }
 
 .local-events{
-background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/dd495a31d0f50b1693d765dcd7de42e76ac7c185);
+  margin: 30px;
+  background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/dd495a31d0f50b1693d765dcd7de42e76ac7c185);
 /* opacity: 0.5; */
 }
 

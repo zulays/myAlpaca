@@ -12,19 +12,19 @@ const UserHome = () => {
       <main>
         <table>
           <tbody>
-            <tr>
+            <tr className="rows">
               <td className="local-events">Local Events</td>
               <td className="weather">Weather</td>
             </tr>
-            <tr>
+            <tr className="rows">
               <td className="restaurants">Restaurants</td>
               <td className="currency">Currency</td>
             </tr>
-            <tr>
+            <tr className="rows">
               <td className="transportation">Transportation</td>
               <td className="languages">Languages</td>
             </tr>
-            <tr>
+            <tr className="rows">
               <td className="culture">Culture</td>
               <td className="shoppping">Shopping</td>
             </tr>
