@@ -1,0 +1,71 @@
+table{
+  border: 2px solid #000000;
+  display: flex;
+  justify-content: space-between;
+}
+
+td{
+  border: 2px solid #000000;
+  width: 350px;
+  height: 225px;
+  margin: 10px;
+  /* padding: 0.5rem; */
+  text-align: left;
+  vertical-align: bottom;
+  font-size: 30px;
+  line-height: 56px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.local-events{
+background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/dd495a31d0f50b1693d765dcd7de42e76ac7c185);
+}
+
+.weather{
+background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/e04d40033bf6040c0bd4f9e7ecb38074216b8ea4);
+}
+
+.restaurants{
+background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/81e780781acb6a918bde84128fee3b0d0191a576);
+}
+
+.currency{
+background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/9ad9fe0969fb91d1708e668c9a1fa0ad1d7be3e1);
+}
+
+.transportation{
+background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/e94e432bd407727385abe58bee8974c031c57b64);
+}
+
+.languages{
+background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/2a06f1b40c2bb3edadbeaf9f649da4517ea52175);
+}
+
+.culture{
+background-image: url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/4f857efbb8da9442c439704c56a0be9a4898b942);
+}
+
+.shopping{
+background-image: url(https://s3-alpha-sig.figma.com/img/4483/148f/b2f1b656582c3922a6e4f86faadafa60?Expires=1595808000&Signature=OHREGVnYyjrvUTkZp8kyZcDIbOFzwXUl27f5gN3zwrfg-BowKZWsFG5aquGoNmdSClBqGtj3TF8cXTbwrMzgy-5KEzzG3e2Vbu8KXnX2HuszYv5bBSirfV-8hE1BSbCRFjZgwfw2XqPaejAGjESvwJTv9R3ycFx4nj5mK7jpLsqckE8lsZaGwt5ozdsiuyXo7DiV3N-fPnC4QU7v2Gl4SQh~txwgZoR1Lnhd~rUYw151oToAyuCjLDXwBYMJ1gY86XWXvxYrOL~srujQwIyRwk5rbikoP7lplHj9fGXaRVeeAZnrJBTIm0vsLfY5I6VTDYaDdo2iOS3GhRpqw0LEqg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+}
+
+
+/* div {
+  width: 200px;
+  height: 200px;
+  display: block;
+  position: relative;
+}
+
+div::after {
+  content: "";
+  background: url(image.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+} */
