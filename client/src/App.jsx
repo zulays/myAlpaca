@@ -2,8 +2,7 @@ import React from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
 import LogInPage from "./screens/LogInPage/LogInPage";
-// manageprofile should be uncommented
-import ManageProfile from "./screens/ManageProfile/ManageProfile";
+// import ManageProfile from "./screens/ManageProfile/ManageProfile";
 import UserCreate from "./screens/UserCreate/UserCreate";
 // import UserEdit from "./screens/UserEdit/UserEdit"
 // import UserDelete from "./screens/UserDelete/UserDelete"
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/login" component={LogInPage}></Route>
-      <Route exact path="/manageprofile" component={ManageProfile}></Route>
+      {/* <Route exact path="/manageprofile" component={ManageProfile}></Route> */}
       {/* <Route exact path="/userdelete" component={UserDelete}></Route> */}
       {/* <Route exact path="/useredit" component={UserEdit}></Route>
       <Route exact path="/userhome" component={UserHome}></Route> */}
