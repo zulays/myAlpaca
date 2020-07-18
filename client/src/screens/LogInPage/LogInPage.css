@@ -89,3 +89,8 @@ label{
   border-radius: 20px;
   border-style: none;
 }
+
+a{
+  color: #000000;
+  text-decoration: none; 
+}
