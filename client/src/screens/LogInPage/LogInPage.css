@@ -1,7 +1,7 @@
 main{
   position: relative;
   font-family: "Roboto", sans-serif;
-  text-align: center;
+  /* text-align: center; */
   background-color: #FFFFFF;
   line-height: 21px;
   display: flex;
@@ -45,7 +45,6 @@ input{
 }
 
 label{
-  text-align: left;
   font-size: 18px;
   color: #000000;
   margin: 10px;
