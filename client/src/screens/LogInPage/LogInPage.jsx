@@ -1,12 +1,13 @@
 import React from "react"
 import "./LogInPage.css"
-import Header from "../../components/shared/Header/Header"
+// import Header from "../../components/shared/Header/Header"
 import Footer from "../../components/shared/Footer/Footer"
+import LogInHeader from "../../components/shared/LogInHeader/LogInHeader"
 
 const LogInPage = () => {
   return (
     <>
-      <Header />
+      <LogInHeader />
       <main>
         <h1>Log In</h1>
         <p>Don't have an account? <span fontWeight="700">Register</span> today!</p>
