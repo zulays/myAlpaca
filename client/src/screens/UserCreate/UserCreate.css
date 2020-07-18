@@ -1,11 +1,11 @@
-.container {
+.usercreate-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.signup {
+.usercreate-signup {
   width: 77px;
   height: 26px;
   left: 556px;
@@ -19,7 +19,7 @@
   color: #000000;
 }
 
-.sentence {
+.usercreate-sentence {
   width: 354px;
   height: 19px;
   left: 423px;
@@ -32,18 +32,18 @@
   color: #000000;
 }
 
-span {
+.usercreate-span {
   font-weight: bold;
 }
 
-form {
+.usercreate-form {
   background: #ffffff;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
   padding: 20px;
 }
 
-.rectangle-21 {
+.usercreate-rectangle-21 {
   width: 243px;
   height: 41px;
   left: 467px;
@@ -54,7 +54,7 @@ form {
   border-radius: 3px;
 }
 
-.rectangle-23 {
+.usercreate-rectangle-23 {
   width: 243px;
   height: 41px;
   left: 467px;
@@ -65,7 +65,7 @@ form {
   border-radius: 3px;
 }
 
-.rectangle-24 {
+.usercreate-rectangle-24 {
   width: 243px;
   height: 41px;
   left: 467px;
@@ -76,7 +76,7 @@ form {
   border-radius: 3px;
 }
 
-.rectangle-22 {
+.usercreate-rectangle-22 {
   width: 243px;
   height: 41px;
   left: 467px;
@@ -87,7 +87,7 @@ form {
   border-radius: 3px;
 }
 
-.rectangle-14 {
+.usercreate-rectangle-14 {
   width: 128px;
   height: 33px;
   left: 525px;
@@ -97,7 +97,7 @@ form {
   color: #fbfce6;
 }
 
-.personal {
+.usercreate-personal {
   width: 292px;
   height: 96px;
   left: 448px;
@@ -111,7 +111,7 @@ form {
   margin-top: 40px;
 }
 
-.username {
+.usercreate-username {
   width: 94px;
   height: 21px;
   left: 467px;
@@ -126,7 +126,7 @@ form {
   padding-right: 150px;
 }
 
-.email {
+.usercreate-email {
   width: 128px;
   height: 21px;
   left: 467px;
@@ -141,7 +141,7 @@ form {
   padding-right: 114px;
 }
 
-.password {
+.usercreate-password {
   width: 92px;
   height: 21px;
   left: 467px;
@@ -156,7 +156,7 @@ form {
   padding-right: 150px;
 }
 
-.confirm {
+.usercreate-confirm {
   width: 160px;
   height: 21px;
   left: 467px;

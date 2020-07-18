@@ -46,16 +46,17 @@ class UserCreate extends Component {
     return (
       <>
         <Header />
-        <div className="container">
-          <p className="signup">Sign Up</p>
-          <p className="sentence">
-            <span>Register</span> so you can save and favorite any content
+        <div className="usercreate-container">
+          <p className="usercreate-signup">Sign Up</p>
+          <p className="usercreate-sentence">
+            <span className="usercreate-span">Register</span> so you can save
+            and favorite any content
           </p>
 
-          <form onSubmit={this.handleSubmit}>
+          <form className="usercreate-form" onSubmit={this.handleSubmit}>
             <p className="username">Username *</p>
             <input
-              className="rectangle-21"
+              className="usercreate-rectangle-21"
               type="text"
               value={user.username}
               name="username"
@@ -63,9 +64,9 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-            <p className="email"> Email Address *</p>
+            <p className="usercreate-email"> Email Address *</p>
             <input
-              className="rectangle-23"
+              className="usercreate-rectangle-23"
               type="text"
               value={user.email}
               name="email"
@@ -73,9 +74,9 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-            <p className="password">Password *</p>
+            <p className="usercreate-password">Password *</p>
             <input
-              className="rectangle-24"
+              className="usercreate-rectangle-24"
               type="password"
               value={user.password}
               name="password"
@@ -83,9 +84,9 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-            <p className="confirm">Confirm Password *</p>
+            <p className="usercreate-confirm">Confirm Password *</p>
             <input
-              className="rectangle-22"
+              className="usercreate-rectangle-22"
               type="password"
               value={user.confirm}
               name="confirm"
@@ -93,13 +94,17 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-            <p className="personal">
+            <p className="usercreate-personal">
               Your personal data will be used to support your experience
               throughout using this website and to manage access to your
               account.Please see our <span>privacy policy</span> if you have any
               questions.
             </p>
-            <input className="rectangle-14" type="submit" value="Register" />
+            <input
+              className="usercreate-rectangle-14"
+              type="submit"
+              value="Register"
+            />
           </form>
         </div>
         <Footer />
