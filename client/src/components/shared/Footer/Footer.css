@@ -6,6 +6,10 @@
   color: #626262;
 }
 
+.myalpaca {
+  color: black;
+}
+
 .links {
   display: flex;
   flex-flow: row wrap;

@@ -5,7 +5,7 @@ const Footer = () =>
   <footer className="footer">
     <div className="links">
       <div className="myalpaca">
-        <p>myAlpaca</p>
+        <p className="bold">myAlpaca</p>
         <p>Subscribe to receive study abroad tips & news!</p>
         <div>
           <input className="input-sub" type="email" placeholder="Email" required></input>
