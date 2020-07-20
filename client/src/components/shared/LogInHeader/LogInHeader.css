@@ -48,7 +48,7 @@ header{
   text-align: left;
 }
 
-.logo{
+.myalpaca-logo{
   height: 65px;
 }
 
@@ -70,7 +70,7 @@ header{
 .nav-bar{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   background-color: #025700;
   list-style: none;
   text-align: center;
@@ -78,6 +78,13 @@ header{
   font-size: 22px;
   line-height: 26px;
   color: #FBFCE6;
+  padding: 0px;
+}
+
+
+.logout-text{
+  display: inline;
+  margin-right: 10px;
 }
 
 
@@ -85,6 +92,7 @@ header{
 margin-right: 0;
 z-index: 1;
 } */
+
 
 .profile-icon{
 
