@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import "./UserEdit.css"
 import Header from "../../components/shared/Header/Header"
 import Footer from "../../components/shared/Footer/Footer"
-import { Link, Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 import { updateUser } from "../../services/users";
 class UserEdit extends Component {
   constructor() {
@@ -12,7 +12,7 @@ class UserEdit extends Component {
         from_location: "",
         to_location: "",
         education: "",
-        area_of_study: [],
+        area_of_study: {},
         interests: [],
         hobbies: [],
         assistance: [],
@@ -33,18 +33,6 @@ class UserEdit extends Component {
     })
   }
 
-  // handleClick = (e) => {
-  //   this.setState({
-  //     user: {
-  //       area_of_study: [],
-  //       interests: [],
-  //       hobbies: [],
-  //       assistance: [],
-  //       priorities: []
-  //     },
-  // handleSelect()
-  //   })
-  // }
 
   handleSubmit = async (e) => {
     e.preventDefault()
@@ -57,11 +45,18 @@ class UserEdit extends Component {
 
 
   handleSelect = (e) => {
-    // const { name, value } = e.target
-    this.setState({
-      button: !this.state.button,
-      // [name]: value
-    })
+    const { name } = e.target
+    console.log(e.target.dataset.category)
+    const { category } = e.target.dataset
+    this.setState(prevState => ({
+      user: {
+        ...prevState.user,
+        [category]: {
+          ...prevState.user[category],
+          [name]: !prevState.user[category][name]
+        }
+      }
+    }))
   }
 
   render() {
@@ -82,6 +77,7 @@ class UserEdit extends Component {
           </div>
           <div className="to-from-location">
             <label className="from-label">I am coming from:</label><input type="text" name="from_location" onChange={this.handleChange} value={this.state.user.from_location} className="from-input" ></input>
+            {/* data- stores info */}
             <label className="to-label">I am going to: </label><input type="text" name="to_location" onChange={this.handleChange} value={this.state.user.to_location} className="to-input"></input>
           </div>
 
@@ -93,8 +89,9 @@ class UserEdit extends Component {
           <div className="edit-options">
             <div className="subjects-array">
               <h2 className="subjects-label" >Area of Study:</h2>
-              <button className={this.state.button ? "buttonTrue" : "art-button"} name="art" value="false" onClick={this.handleSelect}>Art</button>
-              <button className={this.state.button ? "buttonTrue" : "science-button"} name="science" value="false" onClick={this.handleSelect}>Science</button>
+
+              <button className={this.state.user.area_of_study.art ? "buttonTrue" : "art-button"} name="art" value={this.state.user.area_of_study.art} data-category="area_of_study" onClick={this.handleSelect}>Art</button>
+              <button className={this.state.button ? "sci-buttonTrue" : "science-button"} name="science" value="false" onClick={this.handleSelect}>Science</button>
               <button className="math-button"> Math</button>
               <button className="lit-button" onClick={this.handleSelect}>Literature</button>
               <button className="la-button" onClick={this.handleSelect}>Liberal Arts</button>
@@ -144,7 +141,7 @@ class UserEdit extends Component {
             </div>
           </div>
 
-<button className="doneProfile-button" onClick={this.handleSubmit}>Done</button>
+          <button className="doneProfile-button" onClick={this.handleSubmit}>Done</button>
 
         </main>
 
