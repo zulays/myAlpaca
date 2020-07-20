@@ -13,11 +13,24 @@ const main = async () => {
       "from_location": "Egypt",
       "to_location": "Dallas",
       "education": "UT Southwestern",
-      "area_of_study": ["Math", "Healthcare"],
-      "interests": [""],
-      "hobbies": ["Cooking", "Jogging"],
-      "assistance": ["Currency"],
-      "priorities": ["Academics", "Staying in Touch"]
+      "area_of_study": {
+        healthcare: true,
+        math: true
+      },
+      "interests": {
+
+      },
+      "hobbies": {
+        cooking: true,
+        jogging: true
+      },
+      "assistance": {
+        currency: true
+      },
+      "priorities": {
+        academics: true,
+        staying_in_touch: true
+      }
     },
     {
       "username": "Jane123",
@@ -26,11 +39,22 @@ const main = async () => {
       "from_location": "Bulgaria",
       "to_location": "New York City",
       "education": "New York University",
-      "area_of_study": ["Science", "Art"],
-      "interests": ["Music"],
-      "hobbies": ["Dance"],
-      "assistance": ["Housing"],
-      "priorities": ["Culture"],
+      "area_of_study": {
+        science: true,
+        art: true
+      },
+      "interests": {
+        music: true
+      },
+      "hobbies": {
+        dance: true
+      },
+      "assistance": {
+        housing: true
+      },
+      "priorities": {
+        culture: true
+      }
     },
     {
       "username": "JohnDoe",
@@ -39,11 +63,21 @@ const main = async () => {
       "from_location": "Japan",
       "to_location": "Atlanta",
       "education": "Emory University",
-      "area_of_study": ["Science"],
-      "interests": ["Sports"],
-      "hobbies": ["Bar Hopping"],
-      "assistance": ["Maps"],
-      "priorities": ["Shopping"],
+      "area_of_study": {
+        science: true
+      },
+      "interests": {
+        sports: true
+      },
+      "hobbies": {
+        bar_hopping: true
+      },
+      "assistance": {
+        maps: true
+      },
+      "priorities": {
+        shopping: true
+      }
     },
     {
       "username": "Anabella24",
