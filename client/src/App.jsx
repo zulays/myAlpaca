@@ -30,17 +30,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Route exact path="/">
-          Home
-        </Route>
+        <Route exact path="/">Home</Route>
         <Route exact path="/login" component={LogInPage}></Route>
         <Route exact path="/manageprofile" component={ManageProfile}></Route>
-        <Route
-          exact
-          path="/userdelete"
-          render={() => <UserDelete user={this.state.user} />}
-        ></Route>
-        {/* <Route exact path="/useredit" component={UserEdit} id={this.state.id}></Route> */}
+        <Route exact path="/userdelete" render={() => <UserDelete user={this.state.user} />}></Route>
+        {/* <Route exact path="/useredit" render={() => <UserEdit user={this.state.user} />}></Route> */}
         <Route exact path="/userhome" component={UserHome}></Route>
         <Route path="/usercreate" component={UserCreate}></Route>
       </div>
