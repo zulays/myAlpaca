@@ -52,11 +52,26 @@ const main = async () => {
       "from_location": "California",
       "to_location": "Florence",
       "education": "University of Florence",
-      "area_of_study": ["Literature", "Art"],
-      "interests": ["Space", "Pop Culture"],
-      "hobbies": ["Jogging", "Hiking"],
-      "assistance": ["Language", "Maps"],
-      "priorities": ["Sightseeing", "Culture"],
+      "area_of_study": {
+        art: true,
+        literature: true
+      },
+      "interests": {
+        space: true,
+        pop_culture: true
+      },
+      "hobbies": {
+        jogging: true,
+        hiking: true
+      },
+      "assistance": {
+        language: true,
+        maps: true
+      },
+      "priorities": {
+        sightseeing: true,
+        culture: true
+      }
     },
     {
       "username": "Jack789",
@@ -65,11 +80,21 @@ const main = async () => {
       "from_location": "India",
       "to_location": "Seattle",
       "education": "University of Washington",
-      "area_of_study": ["Healthcare"],
-      "interests": ["Politics"],
-      "hobbies": ["Bar Hopping"],
-      "assistance": ["Local Connections"],
-      "priorities": ["Culture"],
+      "area_of_study": {
+        healthcare: true
+      },
+      "interests": {
+        politics: true
+      },
+      "hobbies": {
+        bar_hopping: true
+      },
+      "assistance": {
+        local_connections: true
+      },
+      "priorities": {
+        culture: true
+      }
     }
   ]
 
