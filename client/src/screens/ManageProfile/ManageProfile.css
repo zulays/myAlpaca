@@ -1,0 +1,112 @@
+.manageprofile-bigger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.manageprofile-manage {
+  width: 305px;
+  height: 42px;
+  left: 447px;
+  top: 361px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  color: #ffbe5c;
+}
+
+.manageprofile-container {
+  width: 350px;
+  height: 175px;
+  left: 425px;
+  top: 447px;
+}
+
+.manageprofile-rectangle-38 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 49px;
+  left: 0px;
+  top: 0px;
+  background: #638d62;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+.manageprofile-rectangle-39 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 49px;
+  left: 0px;
+  top: 63px;
+  background: #638d62;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+.manageprofile-rectangle-40 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 49px;
+  left: 0px;
+  top: 63px;
+  background: #638d62;
+  border-radius: 5px;
+  margin-bottom: 13px;
+}
+
+.manageprofile-edit {
+  width: 160px;
+  height: 28px;
+  left: 95px;
+  top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fbfce6;
+}
+
+.manageprofile-hide {
+  width: 305px;
+  height: 28px;
+  left: 23px;
+  top: 74px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fbfce6;
+}
+
+.manageprofile-delete {
+  width: 188px;
+  height: 28px;
+  left: 81px;
+  top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fbfce6;
+}
+
+.manageprofile-link {
+  text-decoration: none;
+}

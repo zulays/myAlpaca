@@ -23,6 +23,7 @@ const LogInHeader = () => {
 
 
 
+
       <div className="nav-bar">
         <h3>About</h3>
         <h3>Reviews</h3>
@@ -35,6 +36,9 @@ const LogInHeader = () => {
 
 
       {/* <ul className="nav-bar">
+
+      <ul className="nav-bar">
+
         <li>About</li>
         <li>Reviews</li>
         <li>Contact</li>
