@@ -17,9 +17,6 @@ const main = async () => {
         healthcare: true,
         math: true
       },
-      "interests": {
-
-      },
       "hobbies": {
         cooking: true,
         jogging: true
