@@ -12,11 +12,16 @@ class UserEdit extends Component {
         from_location: "",
         to_location: "",
         education: "",
-        area_of_study: {},
-        interests: [],
-        hobbies: [],
-        assistance: [],
-        priorities: []
+        area_of_study: {
+          art: false,
+          science: false
+          //initialize all values as false first 
+        },
+        interests: {},
+        hobbies: {},
+        assistance: {},
+        priorities: {}
+        //Object.entries with allow use of array to match schema, brings in key, value pair and allows use of access to it 
       },
       updated: false,
       button: false
