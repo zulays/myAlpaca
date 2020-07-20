@@ -70,7 +70,7 @@ header{
 .nav-bar{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
   background-color: #025700;
   list-style: none;
   text-align: center;
@@ -78,7 +78,6 @@ header{
   font-size: 22px;
   line-height: 26px;
   color: #FBFCE6;
-  padding: 0px;
 }
 
 
