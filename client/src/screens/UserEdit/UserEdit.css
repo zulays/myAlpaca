@@ -1,0 +1,56 @@
+.editPage-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-title{
+
+}
+
+.to-from-location{
+
+}
+
+.from-input,
+.to-input,
+.education-input{
+
+}
+
+.from-label,
+.to-label,
+.education{
+
+}
+
+.edit-options{
+
+}
+
+.subjects-array,
+.interests-array,
+.hobbies-array,
+.assistance-array,
+.priorities-array{
+
+}
+
+.subjects-label,
+.interests-label,
+.hobbies-label,
+.assistance-label,
+.priorities-label{
+
+}
+
+
+.doneProfile-button{
+  font-size: 18px;
+  height: 33px;
+  background-color: #025800;
+  color: #FBFCE6;
+  padding: 2px 20px;
+  border-radius: 20px;
+  border-style: none;
+}
