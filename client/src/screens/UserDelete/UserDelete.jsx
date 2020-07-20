@@ -13,6 +13,7 @@ class UserDelete extends Component {
 
   async componentDidMount() {
     let { id } = this.props.match.params
+    console.log(id)
     const user = await getUser(id)
     this.setState({ user })
   }
@@ -40,7 +41,7 @@ class UserDelete extends Component {
           </div>
         </div>
         <div className="buttons-div">
-          <button className="delete-button" onClick={() => deleteUser(user._id)}>Delete Profile</button>
+          <button className="delete-button" onClick={() => deleteUser(this.state.user._id)}>Delete Profile</button>
           {/* <button className="cancel-button">Cancel</button> */}
           <button className="cancel-button"><Link className="cancel-link" to={`/manageprofile`}>Cancel</Link></button>
         </div>
