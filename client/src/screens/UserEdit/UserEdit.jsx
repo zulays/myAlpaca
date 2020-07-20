@@ -59,10 +59,10 @@ class UserEdit extends Component {
 
 
   handleSelect = (e) => {
-    const { name, value } = e.target
+    // const { name, value } = e.target
     this.setState({
       button: !this.state.button,
-      [name]: value
+      // [name]: value
     })
   }
 
