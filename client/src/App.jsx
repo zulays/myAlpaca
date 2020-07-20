@@ -21,6 +21,7 @@ class App extends Component {
     const users = await getUsers();
     console.log(users[0]);
     console.log(users[0]._id);
+
     this.setState({
       user: users[0],
     });
