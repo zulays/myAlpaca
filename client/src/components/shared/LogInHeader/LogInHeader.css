@@ -1,7 +1,7 @@
 header{
-  flex: 1;
+  /* flex: 1; */
   width: 100%;
-  height: 113px;
+  height: 200px;
   text-align: center;
 }
 
@@ -41,6 +41,8 @@ h3{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 10px;
+  height: 65px;
 }
 
 .logo-set{
@@ -77,16 +79,15 @@ h3{
   text-align: center;
   font-weight: 700;
   font-size: 22px;
+  padding: 10px;
   line-height: 30px;
   color: #FBFCE6;
   
 }
 
-.login-nav-text{
-  vertical-align: top;
-}
 
 .logout-text{
   display: inline;
   margin-right: 6px;
+  /* z-index: 1; */
 }
