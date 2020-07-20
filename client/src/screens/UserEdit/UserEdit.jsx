@@ -14,18 +14,48 @@ class UserEdit extends Component {
         education: "",
         area_of_study: {
           art: false,
-          science: false
-          //initialize all values as false first 
+          science: false,
+          math: false,
+          literature: false,
+          liberal_arts: false,
+          healthcare: false
         },
-        interests: {},
-        hobbies: {},
-        assistance: {},
-        priorities: {}
+        interests: {
+          politics: false,
+          space: false,
+          social_media: false,
+          music: false,
+          sports: false,
+          pop_culture: false
+        },
+        hobbies: {
+          cooking: false,
+          jogging: false,
+          bar_hopping: false,
+          dance: false,
+          movies: false,
+          hiking: false
+        },
+        assistance: {
+          language: false,
+          housing: false,
+          currency: false,
+          visa: false,
+          local_connections: false,
+          maps: false
+        },
+        priorities: {
+          academics: false,
+          culture: false,
+          shopping: false,
+          sightseeing: false,
+          spiritually: false,
+          staying_in_touch: false
+        }
         //Object.entries with allow use of array to match schema, brings in key, value pair and allows use of access to it 
         //consider how data with go to BE -- convert values into an 
         //consider how data will be entered in FE
         //how to link the 2 together
-
       },
       updated: false,
       button: false
