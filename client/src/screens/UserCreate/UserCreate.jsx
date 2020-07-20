@@ -45,19 +45,6 @@ class UserCreate extends Component {
     }
     return (
       <>
-<<<<<<< HEAD
-        <div className="container">
-          <p className="signup">Sign Up</p>
-          <p>
-            <span className="register">Register</span> so you can save and
-            favorite any content
-          </p>
-
-          <form onSubmit={this.handleSubmit}>
-            <p className="username">Username *</p>
-            <input
-              className="rectangle-21"
-=======
         <Header />
         <div className="usercreate-container">
           <p className="usercreate-signup">Sign Up</p>
@@ -70,7 +57,6 @@ class UserCreate extends Component {
             <p className="username">Username *</p>
             <input
               className="usercreate-rectangle-21"
->>>>>>> c7856fc52dbdf79689330a0abaab06fe45b6f4da
               type="text"
               value={user.username}
               name="username"
@@ -78,15 +64,9 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-<<<<<<< HEAD
-            <p className="email"> Email Address *</p>
-            <input
-              className="rectangle-23"
-=======
             <p className="usercreate-email"> Email Address *</p>
             <input
               className="usercreate-rectangle-23"
->>>>>>> c7856fc52dbdf79689330a0abaab06fe45b6f4da
               type="text"
               value={user.email}
               name="email"
@@ -94,15 +74,9 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-<<<<<<< HEAD
-            <p className="password">Password *</p>
-            <input
-              className="rectangle-24"
-=======
             <p className="usercreate-password">Password *</p>
             <input
               className="usercreate-rectangle-24"
->>>>>>> c7856fc52dbdf79689330a0abaab06fe45b6f4da
               type="password"
               value={user.password}
               name="password"
@@ -110,15 +84,9 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-<<<<<<< HEAD
-            <p className="confirm">Confirm Password *</p>
-            <input
-              className="rectangle-22"
-=======
             <p className="usercreate-confirm">Confirm Password *</p>
             <input
               className="usercreate-rectangle-22"
->>>>>>> c7856fc52dbdf79689330a0abaab06fe45b6f4da
               type="password"
               value={user.confirm}
               name="confirm"
@@ -126,21 +94,12 @@ class UserCreate extends Component {
               autoFocus
               onChange={this.handleChange}
             />
-<<<<<<< HEAD
-            <p className="personal">
-=======
             <p className="usercreate-personal">
->>>>>>> c7856fc52dbdf79689330a0abaab06fe45b6f4da
               Your personal data will be used to support your experience
               throughout using this website and to manage access to your
               account.Please see our <span>privacy policy</span> if you have any
               questions.
             </p>
-<<<<<<< HEAD
-            <input className="rectangle-14" type="submit" value="Register" />
-          </form>
-        </div>
-=======
             <input
               className="usercreate-rectangle-14"
               type="submit"
@@ -149,7 +108,6 @@ class UserCreate extends Component {
           </form>
         </div>
         <Footer />
->>>>>>> c7856fc52dbdf79689330a0abaab06fe45b6f4da
       </>
     );
   }
