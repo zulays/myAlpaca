@@ -98,6 +98,7 @@ const main = async () => {
     }
   ]
 
+
   await User.insertMany(users)
   console.log("Created users!")
 }
