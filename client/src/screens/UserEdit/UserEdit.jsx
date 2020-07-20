@@ -4,11 +4,9 @@ import Header from "../../components/shared/Header/Header"
 import Footer from "../../components/shared/Footer/Footer"
 import { Link, Redirect } from "react-router-dom";
 import { updateUser } from "../../services/users";
-
-
 class UserEdit extends Component {
   constructor() {
-    super()
+    super();
     this.state = {
       user: {
         from_location: "",
@@ -74,17 +72,14 @@ class UserEdit extends Component {
       return
       // <Redirect to={"/userhome"} />
     }
-
     return (
       <>
         <Header />
         <main className="editPage-main">
-
           <div className="edit-title">
             <h2>Tell us more about you...</h2>
             <p>You can always come back and add more!</p>
           </div>
-
           <div className="to-from-location">
             <label className="from-label">I am coming from:</label><input type="text" name="from_location" onChange={this.handleChange} value={this.state.user.from_location} className="from-input" ></input>
             <label className="to-label">I am going to: </label><input type="text" name="to_location" onChange={this.handleChange} value={this.state.user.to_location} className="to-input"></input>
@@ -147,17 +142,15 @@ class UserEdit extends Component {
               <button className="pri-button">Spirituality</button>
               <button className="pri-button">Staying in Touch</button>
             </div>
-
           </div>
 
-          <Link to="/userhome"><button className="doneProfile-button" onClick={this.handleSubmit}>Done</button> </Link>
+<button className="doneProfile-button" onClick={this.handleSubmit}>Done</button>
 
         </main>
 
-
-        < Footer />
+        <Footer />
       </>
-    )
+    );
   }
 }
-export default UserEdit
+export default UserEdit;
