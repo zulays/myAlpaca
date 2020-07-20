@@ -69,6 +69,26 @@ line-height:26px;
   font-weight: 600;
 }
 
+.buttonFalse{
+  margin: 15px;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.buttonTrue{
+  border: 3px solid #FFBE5C;
+  background-color: #FBFCE6;
+  color: #025700;
+  margin: 15px;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+
 .int-button,
 .hob-button,
 .ast-button,

@@ -21,7 +21,7 @@ class UserEdit extends Component {
         priorities: []
       },
       updated: false,
-      color: ""
+      button: false
     }
   }
 
@@ -43,7 +43,8 @@ class UserEdit extends Component {
   //       hobbies: [],
   //       assistance: [],
   //       priorities: []
-  //     }
+  //     },
+  // handleSelect()
   //   })
   // }
 
@@ -56,23 +57,14 @@ class UserEdit extends Component {
     })
   }
 
+
   handleSelect = (e) => {
-    // if (color === "") {
-    // borderColor: 3px solid #FFBE5C,
-    // , fontColor: #025700 
+    const { name, value } = e.target
     this.setState({
-      // let style = {{ backgroundColor: #FBFCE6 }
-      color: 
-})
+      button: !this.state.button,
+      [name]: value
+    })
   }
-
-
-
-
-
-
-
-
 
   render() {
 
@@ -106,18 +98,18 @@ class UserEdit extends Component {
           <div className="edit-options">
             <div className="subjects-array">
               <h2 className="subjects-label" >Area of Study:</h2>
-              <button className="art-button" onClick={this.handleSelect}>Art</button>
-              <button className="science-button">Science</button>
-              <button className="math-button">Math</button>
-              <button className="lit-button">Literature</button>
-              <button className="la-button">Liberal Arts</button>
-              <button className="health-button">Healthcare</button>
+              <button className={this.state.button ? "buttonTrue" : "art-button"} name="art" value="false" onClick={this.handleSelect}>Art</button>
+              <button className={this.state.button ? "buttonTrue" : "science-button"} name="science" value="false" onClick={this.handleSelect}>Science</button>
+              <button className="math-button"> Math</button>
+              <button className="lit-button" onClick={this.handleSelect}>Literature</button>
+              <button className="la-button" onClick={this.handleSelect}>Liberal Arts</button>
+              <button className="health-button" onClick={this.handleSelect}>Healthcare</button>
             </div>
 
 
             <div className="interests-array">
               <h2 className="interests-label">My Interests:</h2>
-              <button className="int-button">Politics</button>
+              <button className={this.state.button ? "buttonTrue" : "int-button"} onClick={this.handleSelect}>Politics</button>
               <button className="int-button">Space</button>
               <button className="int-button">Social Media</button>
               <button className="int-button">Music</button>
@@ -127,7 +119,7 @@ class UserEdit extends Component {
 
             <div className="hobbies-array">
               <h2 className="hobbies-label">My Hobbies:</h2>
-              <button className="hob-button">Cooking</button>
+              <button className={this.state.button ? "buttonTrue" : "hob-button"} onClick={this.handleSelect}>Cooking</button>
               <button className="hob-button">Jogging</button>
               <button className="hob-button">Bar Hopping</button>
               <button className="hob-button">Dance</button>
@@ -138,7 +130,7 @@ class UserEdit extends Component {
 
             <div className="assistance-array">
               <h2 className="assistance-label">I could use some help with:</h2>
-              <button className="ast-button">Language</button>
+              <button className={this.state.button ? "buttonTrue" : "ast-button"} onClick={this.handleSelect}>Language</button>
               <button className="ast-button">Housing</button>
               <button className="ast-button">Currency</button>
               <button className="ast-button">Visa</button>
@@ -148,7 +140,7 @@ class UserEdit extends Component {
 
             <div className="priorities-array">
               <h2 className="priorities-label">My priorities are:</h2>
-              <button className="pri-button">Academics</button>
+              <button className={this.state.button ? "buttonTrue" : "buttonFalse"} onClick={this.handleSelect}>Academics</button>
               <button className="pri-button">Culture</button>
               <button className="pri-button">Shopping</button>
               <button className="pri-button">Sightseeing</button>
@@ -158,7 +150,7 @@ class UserEdit extends Component {
 
           </div>
 
-          <Link to="/userhome"><button className="doneProfile-button">Done</button> </Link>
+          <Link to="/userhome"><button className="doneProfile-button" onClick={this.handleSubmit}>Done</button> </Link>
 
         </main>
 
