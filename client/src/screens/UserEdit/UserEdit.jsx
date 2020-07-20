@@ -22,6 +22,10 @@ class UserEdit extends Component {
         assistance: {},
         priorities: {}
         //Object.entries with allow use of array to match schema, brings in key, value pair and allows use of access to it 
+        //consider how data with go to BE -- convert values into an 
+        //consider how data will be entered in FE
+        //how to link the 2 together
+
       },
       updated: false,
       button: false
