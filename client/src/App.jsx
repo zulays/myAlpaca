@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
 import LogInPage from "./screens/LogInPage/LogInPage";
@@ -8,17 +8,32 @@ import UserCreate from "./screens/UserCreate/UserCreate";
 import UserDelete from "./screens/UserDelete/UserDelete"
 import UserHome from "./screens/UserHome/UserHome"
 
-function App() {
-  return (
-    <div className="App">
-      <Route exact path="/login" component={LogInPage}></Route>
-      <Route exact path="/manageprofile" component={ManageProfile}></Route>
-      <Route exact path="/userdelete" component={UserDelete}></Route>
-      {/* <Route exact path="/useredit" component={UserEdit}></Route>*/}
-      <Route exact path="/userhome" component={UserHome}></Route>
-      <Route path="/usercreate" component={UserCreate}></Route>
-    </div>
-  );
+class App extends Component {
+  construtor() {
+    super()
+    this.state = {
+      user = ""
+    }
+  }
+
+
+  componentDidMount = async () => {
+
+  }
+
+
+  render() {
+    return (
+      <div className="App" >
+        <Route exact path="/login" component={LogInPage}></Route>
+        <Route exact path="/manageprofile" component={ManageProfile}></Route>
+        <Route exact path="/userdelete" component={UserDelete}></Route>
+        {/* <Route exact path="/useredit" component={UserEdit}></Route>*/}
+        <Route exact path="/userhome" component={UserHome} ></Route>
+        <Route path="/usercreate" component={UserCreate}></Route>
+      </div >
+    );
+  }
 }
 
 export default App;
