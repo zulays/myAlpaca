@@ -2,6 +2,7 @@ import React from "react"
 import "./UserHome.css"
 import LogInHeader from "../../components/shared/LogInHeader/LogInHeader"
 import Footer from "../../components/shared/Footer/Footer"
+// import WelcomeBanner from "../../components/shared/WelcomeBanner/WelcomeBanner"
 
 
 const UserHome = () => {
@@ -9,6 +10,7 @@ const UserHome = () => {
     <>
       <LogInHeader />
       <main>
+        {/* <WelcomeBanner /> */}
         <table>
           <tbody>
             <tr className="rows">
@@ -25,7 +27,7 @@ const UserHome = () => {
             </tr>
             <tr className="rows">
               <td className="culture">Culture</td>
-              <td className="shoppping">Shopping</td>
+              <td className="shopping">Shopping</td>
             </tr>
           </tbody>
 
