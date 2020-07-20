@@ -41,7 +41,7 @@ class UserDelete extends Component {
           </div>
         </div>
         <div className="buttons-div">
-          <button className="delete-button" onClick={() => deleteUser(this.state.user._id)}>Delete Profile</button>
+          <button className="delete-button" onClick={() => deleteUser(user._id)}>Delete Profile</button>
           {/* <button className="cancel-button">Cancel</button> */}
           <button className="cancel-button"><Link className="cancel-link" to={`/manageprofile`}>Cancel</Link></button>
         </div>
