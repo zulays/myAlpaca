@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 import { createUser } from "../../services/users";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
+import { Link } from "react-router-dom";
 
 class UserCreate extends Component {
   constructor() {
@@ -100,11 +101,15 @@ class UserCreate extends Component {
               account.Please see our <span>privacy policy</span> if you have any
               questions.
             </p>
-            <input
-              className="usercreate-rectangle-14"
-              type="submit"
-              value="Register"
-            />
+            <div className="usercreate-register-container">
+              <Link to={"/useredit"} className="usercreate-link">
+                <input
+                  className="usercreate-rectangle-14"
+                  type="submit"
+                  value="Register"
+                />
+              </Link>
+            </div>
           </form>
         </div>
         <Footer />

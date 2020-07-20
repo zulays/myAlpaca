@@ -1,14 +1,13 @@
 import React from "react"
 import "./UserHome.css"
-import Header from "../../components/shared/Header/Header"
+import LogInHeader from "../../components/shared/LogInHeader/LogInHeader"
 import Footer from "../../components/shared/Footer/Footer"
-// import LogInHeader from "../../components/shared/LogInHeader/LogInHeader"
+
 
 const UserHome = () => {
   return (
     <>
-      <Header />
-      {/* <LogInHeader /> */}
+      <LogInHeader />
       <main>
         <table>
           <tbody>
