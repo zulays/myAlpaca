@@ -15,13 +15,45 @@ class UserEdit extends Component {
         area_of_study: {
           art: false,
           science: false,
-          //initialize all values as false first
+          math: false,
+          literature: false,
+          liberal_arts: false,
+          healthcare: false
         },
-        interests: {},
-        hobbies: {},
-        assistance: {},
-        priorities: {},
-        //Object.entries with allow use of array to match schema, brings in key, value pair and allows use of access to it
+        interests: {
+          politics: false,
+          space: false,
+          social_media: false,
+          music: false,
+          sports: false,
+          pop_culture: false
+        },
+        hobbies: {
+          cooking: false,
+          jogging: false,
+          bar_hopping: false,
+          dance: false,
+          movies: false,
+          hiking: false
+        },
+        assistance: {
+          language: false,
+          housing: false,
+          currency: false,
+          visa: false,
+          local_connections: false,
+          maps: false
+        },
+        priorities: {
+          academics: false,
+          culture: false,
+          shopping: false,
+          sightseeing: false,
+          spiritually: false,
+          staying_in_touch: false
+        }
+          //initialize all values as false first
+        //Object.entries with allow use of array to match schema, brings in key, value pair and allows use of access to it 
         //consider how data with go to BE -- convert values into an
         //consider how data will be entered in FE
         //how to link the 2 together
@@ -51,10 +83,11 @@ class UserEdit extends Component {
   };
 
   handleSelect = (e) => {
-    const { name } = e.target;
-    console.log(e.target.dataset.category);
-    const { category } = e.target.dataset;
-    this.setState((prevState) => ({
+
+    const { name } = e.target
+    console.log(e.target.dataset)
+    const { category } = e.target.dataset
+    this.setState(prevState => ({
       user: {
         ...prevState.user,
         [category]: {
@@ -64,6 +97,13 @@ class UserEdit extends Component {
       },
     }));
   };
+
+  componentDidMount = () => {
+    //update current user with existing parameters
+    //update state from existing changes
+
+  }
+
 
   render() {
     const { user, updated } = this.state;
@@ -164,7 +204,7 @@ class UserEdit extends Component {
               >
                 Literature
               </button>
-
+              
               <button
                 className={
                   this.state.user.area_of_study.liberal_arts
@@ -195,44 +235,37 @@ class UserEdit extends Component {
 
             <div className="interests-array">
               <h2 className="interests-label">My Interests:</h2>
-              <button
-                className={this.state.button ? "buttonTrue" : "int-button"}
-                onClick={this.handleSelect}
-              >
-                Politics
-              </button>
-              <button className="int-button">Space</button>
-              <button className="int-button">Social Media</button>
-              <button className="int-button">Music</button>
-              <button className="int-button">Sports</button>
-              <button className="int-button">Pop Culture</button>
+
+              <button className={this.state.user.interests.politics ? "buttonTrue" : "poli-button"} data-category="interests" onClick={this.handleSelect} name="politics">Politics</button>
+              <button className={this.state.user.interests.space ? "buttonTrue" : "space-button"} data-category="interests" onClick={this.handleSelect} name="space">Space</button>
+              <button className={this.state.user.interests.social_media ? "buttonTrue" : "socmed-button"} data-category="interests" onClick={this.handleSelect} name="social_media">Social Media</button>
+              <button className={this.state.user.interests.music ? "buttonTrue" : "music-button"} data-category="interests" onClick={this.handleSelect} name="music">Music</button>
+              <button className={this.state.user.interests.sports ? "buttonTrue" : "sports-button"} data-category="interests" onClick={this.handleSelect} name="sports">Sports</button>
+              <button className={this.state.user.interests.pop_culture ? "buttonTrue" : "popcul-button"} data-category="interests" onClick={this.handleSelect} name="pop_culture">Pop Culture</button>
             </div>
 
             <div className="hobbies-array">
               <h2 className="hobbies-label">My Hobbies:</h2>
-              <button
-                className={this.state.button ? "buttonTrue" : "hob-button"}
-                onClick={this.handleSelect}
-              >
-                Cooking
-              </button>
-              <button className="hob-button">Jogging</button>
-              <button className="hob-button">Bar Hopping</button>
-              <button className="hob-button">Dance</button>
-              <button className="hob-button">Movies</button>
-              <button className="hob-button">Hiking</button>
+
+              <button className={this.state.user.hobbies.cooking ? "buttonTrue" : "cook-button"} data-category="hobbies" onClick={this.handleSelect}>Cooking</button>
+              <button className={this.state.user.hobbies.jogging ? "buttonTrue" : "jog-button"} data-category="hobbies" onClick={this.handleSelect}>Jogging</button>
+              <button className={this.state.user.hobbies.bar_hopping ? "buttonTrue" : "barhop-button"} data-category="hobbies" onClick={this.handleSelect}>Bar Hopping</button>
+              <button className={this.state.user.hobbies.dance ? "buttonTrue" : "dance-button"} data-category="hobbies" onClick={this.handleSelect}>Dance</button>
+              <button className={this.state.user.hobbies.movies ? "buttonTrue" : "mov-button"} data-category="hobbies" onClick={this.handleSelect}>Movies</button>
+              <button className={this.state.user.hobbies.hiking ? "buttonTrue" : "hike-button"} data-category="hobbies" onClick={this.handleSelect}>Hiking</button>
             </div>
 
             <div className="assistance-array">
               <h2 className="assistance-label">I could use some help with:</h2>
+
               <button
                 className={this.state.button ? "buttonTrue" : "ast-button"}
                 onClick={this.handleSelect}
               >
                 Language
               </button>
-              <button className="ast-button">Housing</button>
-              <button className="ast-button">Currency</button>
+             <button className={this.state.user.assistance.housing ? "buttonTrue" : "house-button"} data-category="assistance" onClick={this.handleSelect}>Housing</button>
+              <button className={this.state.user.assistance.currency ? "buttonTrue" : "curr-button"} data-category="currency">Currency</button>
               <button
                 className={
                   this.state.user.assistance.visa ? "buttonTrue" : "visa"

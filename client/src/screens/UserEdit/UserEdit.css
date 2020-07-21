@@ -89,10 +89,25 @@ line-height:26px;
 }
 
 
-.int-button,
-.hob-button,
-.ast-button,
-.pri-button{
+.poli-button,
+.space-button,
+.socmed-button,
+.music-button,
+.sports-button,
+.popcul-button{
+  margin: 15px;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.cook-button,
+.jog-button,
+.barhop-button,
+.dance-button,
+.mov-button,
+.hike-button{
   margin: 15px;
   padding: 40px;
   font-size: 20px;
