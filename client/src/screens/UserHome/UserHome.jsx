@@ -14,7 +14,7 @@ const UserHome = () => {
         <table>
           <tbody>
             <tr className="rows">
-              <td className="local-events">Local Events</td>
+              <td><div className="local-events">Local Events</div></td>
               <td className="weather">Weather</td>
             </tr>
             <tr className="rows">
