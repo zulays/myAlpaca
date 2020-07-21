@@ -1,5 +1,6 @@
 import React from "react"
 import "./Header.css"
+import { Link } from "react-router-dom"
 
 const Header = () => {
 
@@ -12,22 +13,22 @@ const Header = () => {
         <p className="exit-banner">x</p>
       </div>
 
-      <div className="icon-bar">
+      <div className="header-icon-bar">
         <div className="logo-set">
-          <img src="#" alt="myalpaca-logo" className="logo" />
+          <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/alpaca-logo_igwnih.png" alt="myalpaca-logo" className="myalpaca-logo" />
           <h1 className="logo-text">myAlpaca</h1>
         </div>
-        <img src="#" alt="profile-icon" className="profile-icon" />
+        <Link to="/usercreate">  <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/profile-icon_jwxqyj.png" alt="profile-icon" className="profile-icon" /> </Link>
       </div>
 
 
 
-      <ul className="nav-bar">
+      <ul className="header-nav-bar">
         <li>About</li>
         <li>Reviews</li>
         <li>Contact</li>
         <li>FAQ</li>
-        <li className="side-text">Profile</li>
+        <Link to="/usercreate"> <li className="side-text">Profile</li> </Link>
       </ul>
 
     </header>
