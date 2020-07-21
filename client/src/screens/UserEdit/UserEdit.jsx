@@ -173,21 +173,21 @@ class UserEdit extends Component {
             <div className="hobbies-array">
               <h2 className="hobbies-label">My Hobbies:</h2>
 
-              <button className={this.state.user.hobbies.cooking ? "buttonTrue" : "cook-button"} data-category="hobbies" onClick={this.handleSelect}>Cooking</button>
-              <button className={this.state.user.hobbies.jogging ? "buttonTrue" : "jog-button"} data-category="hobbies" onClick={this.handleSelect}>Jogging</button>
-              <button className={this.state.user.hobbies.bar_hopping ? "buttonTrue" : "barhop-button"} data-category="hobbies" onClick={this.handleSelect}>Bar Hopping</button>
-              <button className={this.state.user.hobbies.dance ? "buttonTrue" : "dance-button"} data-category="hobbies" onClick={this.handleSelect}>Dance</button>
-              <button className={this.state.user.hobbies.movies ? "buttonTrue" : "mov-button"} data-category="hobbies" onClick={this.handleSelect}>Movies</button>
-              <button className={this.state.user.hobbies.hiking ? "buttonTrue" : "hike-button"} data-category="hobbies" onClick={this.handleSelect}>Hiking</button>
+              <button className={this.state.user.hobbies.cooking ? "buttonTrue" : "cook-button"} name="cooking" data-category="hobbies" onClick={this.handleSelect}>Cooking</button>
+              <button className={this.state.user.hobbies.jogging ? "buttonTrue" : "jog-button"} name="jogging" data-category="hobbies" onClick={this.handleSelect}>Jogging</button>
+              <button className={this.state.user.hobbies.bar_hopping ? "buttonTrue" : "barhop-button"} name="bar_hopping" data-category="hobbies" onClick={this.handleSelect}>Bar Hopping</button>
+              <button className={this.state.user.hobbies.dance ? "buttonTrue" : "dance-button"} name="dance" data-category="hobbies" onClick={this.handleSelect}>Dance</button>
+              <button className={this.state.user.hobbies.movies ? "buttonTrue" : "mov-button"} name="movies" data-category="hobbies" onClick={this.handleSelect}>Movies</button>
+              <button className={this.state.user.hobbies.hiking ? "buttonTrue" : "hike-button"} name="hiking" data-category="hobbies" onClick={this.handleSelect}>Hiking</button>
             </div>
 
             <div className="assistance-array">
               <h2 className="assistance-label">I could use some help with:</h2>
 
-              <button className={this.state.user.assistance.language ? "buttonTrue" : "lang-button"} data-category="assistance" onClick={this.handleSelect}>Language</button>
-              <button className={this.state.user.assistance.housing ? "buttonTrue" : "house-button"} data-category="assistance" onClick={this.handleSelect}>Housing</button>
-              <button className={this.state.user.assistance.currency ? "buttonTrue" : "curr-button"} data-category="assistance" onClick={this.handleSelect}> Currency</button>
-              <button className={this.state.user.assistance.visa ? "buttonTrue" : "visa-button"} name="visa" value={this.state.user.assistance.visa} data-category="assistance" onclick={this.handleSelect}>Visa</button>
+              <button className={this.state.user.assistance.language ? "buttonTrue" : "lang-button"} name="language" data-category="assistance" onClick={this.handleSelect}>Language</button>
+              <button className={this.state.user.assistance.housing ? "buttonTrue" : "house-button"} name="housing" data-category="assistance" onClick={this.handleSelect}>Housing</button>
+              <button className={this.state.user.assistance.currency ? "buttonTrue" : "curr-button"} name="currency" data-category="assistance" onClick={this.handleSelect}> Currency</button>
+              <button className={this.state.user.assistance.visa ? "buttonTrue" : "visa-button"} name="visa" value={this.state.user.assistance.visa} data-category="assistance" onClick={this.handleSelect}>Visa</button>
               <button className={this.state.user.assistance.local_connections ? "buttonTrue" : "localcon-button"} name="local_connections" value={this.state.user.assistance.local_connections} data-category="assistance" onClick={this.handleSelect}>Local Connections </button>
               <button className={this.state.user.assistance.maps ? "buttonTrue" : "maps-button"} name="maps" value={this.state.user.assistance.maps} data-category="assistance" onClick={this.handleSelect} >Maps</button>
             </div>
