@@ -4,44 +4,55 @@ import { Redirect } from "react-router-dom";
 import { createUser } from "../../services/users";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
-import { Link } from "react-router-dom";
 
 class UserCreate extends Component {
-  constructor() {
-    super();
-    this.state = {
-      user: {
-        username: "",
-        email: "",
-        password: "",
-        confirm: "",
-      },
-      created: false,
-    };
+  constructor(props) {
+    super(props);
   }
+  // this.state = {
+  //   user: {
+  //     username: "",
+  //     email: "",
+  //     password: "",
+  //     confirm: "",
+  //   },
+  //   created: false,
+  // };
+  // }
 
-  handleChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({
-      user: {
-        ...this.state.user,
-        [name]: value,
-      },
-    });
-  };
+  // remove state & handlechange
+  // move to app file
 
-  handleSubmit = async (event) => {
-    event.preventDefault();
-    if (this.state.user.password === this.state.user.confirm) {
-      const created = await createUser(this.state.user);
-      this.setState({ created });
-    }
-  };
+  // handleChange = (event) => {
+  //   const { name, value } = event.target;
+  //   this.setState({
+  //     user: {
+  //       ...this.state.user,
+  //       [name]: value,
+  //     },
+  //   });
+  // };
+
+  // handleSubmit = async (event) => {
+  //   event.preventDefault();
+  //   if (this.state.user.password === this.state.user.confirm) {
+  //     console.log("we made it");
+  //     const created = await createUser(this.state.user);
+  //     console.log(created);
+  //     this.setState({ created });
+  //   }
+  // };
 
   render() {
-    const { user, created } = this.state;
+    // const { user, created } = this.state;
 
+    // if (created) {
+    //   console.log(created);
+    //   return <Redirect to={`/useredit`} />;
+    // }
+    const { user, created, handleChange, handleSubmit } = this.props;
     if (created) {
+      console.log(created);
       return <Redirect to={`/useredit`} />;
     }
     return (
@@ -54,7 +65,7 @@ class UserCreate extends Component {
             and favorite any content
           </p>
 
-          <form className="usercreate-form" onSubmit={this.handleSubmit}>
+          <form className="usercreate-form" onSubmit={handleSubmit}>
             <p className="username">Username *</p>
             <input
               className="usercreate-rectangle-21"
@@ -63,7 +74,7 @@ class UserCreate extends Component {
               name="username"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-email"> Email Address *</p>
             <input
@@ -73,7 +84,7 @@ class UserCreate extends Component {
               name="email"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-password">Password *</p>
             <input
@@ -83,7 +94,7 @@ class UserCreate extends Component {
               name="password"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-confirm">Confirm Password *</p>
             <input
@@ -93,7 +104,7 @@ class UserCreate extends Component {
               name="confirm"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-personal">
               Your personal data will be used to support your experience
@@ -102,13 +113,11 @@ class UserCreate extends Component {
               questions.
             </p>
             <div className="usercreate-register-container">
-              <Link to={"/useredit"} className="usercreate-link">
-                <input
-                  className="usercreate-rectangle-14"
-                  type="submit"
-                  value="Register"
-                />
-              </Link>
+              <input
+                className="usercreate-rectangle-14"
+                type="submit"
+                value="Register"
+              />
             </div>
           </form>
         </div>
