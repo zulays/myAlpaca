@@ -1,8 +1,13 @@
-/* .editPage-main{
-  display: flex;
-  /* justify-content: center;
-  align-items: center;
-} */
+.editPage-main{
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.to-from-location{
+   
+}
+
 
 .from-input,
 .to-input,
