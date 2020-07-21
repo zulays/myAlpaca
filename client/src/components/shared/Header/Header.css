@@ -41,8 +41,7 @@ h3{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 10px auto;
-  height: 65px;
+  margin: 0 auto;
 }
 
 
@@ -75,7 +74,6 @@ h3{
 .userprofile-signup{
   margin-right: 20px;
   margin-top: 10px;
-  height: 65px;
 }
 
 .nouser-profile-icon{
@@ -87,6 +85,6 @@ h3{
   text-decoration: none;
   text-align: center;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
 }
