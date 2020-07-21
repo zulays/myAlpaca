@@ -10,8 +10,8 @@ const LogInPage = () => {
       <Header />
       <main>
         <h1>Log In</h1>
-        <p className="login-subtext">Don't have an account? <span fontWeight="700" className="register-text">Register</span> today!</p>
-        <form>
+        <p className="login-subtext">Don't have an account? <Link to="/usercreate"><span fontWeight="700" className="register-text">Register</span></Link> today!</p>
+        <form className="login-form">
           <label>Username or Email Address</label>
           <input type="text" className="inputs" />
           <label>Password</label>
