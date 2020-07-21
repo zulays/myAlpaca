@@ -103,16 +103,14 @@ class UserEdit extends Component {
     //update current user with existing parameters
     //update state from existing changes
     const userEdit = this.props.user._id
-    console.log(this.props)
     const user = await getUser(userEdit)
-    console.log(user)
     this.setState({
       user: {
-        from_location: "",
-        to_location: "",
-        education: "",
+        from_location: user.from_location,
+        to_location: user.to_location,
+        education: user.education,
         area_of_study: {
-          art: false,
+          art: user.area_of_study.art,
           science: false,
           math: false,
           literature: false,
