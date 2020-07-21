@@ -139,22 +139,22 @@ class UserEdit extends Component {
 
             <div className="interests-array">
               <h2 className="interests-label">My Interests:</h2>
-              <button className={this.state.button ? "buttonTrue" : "int-button"} onClick={this.handleSelect}>Politics</button>
-              <button className="int-button">Space</button>
-              <button className="int-button">Social Media</button>
-              <button className="int-button">Music</button>
-              <button className="int-button">Sports</button>
-              <button className="int-button">Pop Culture</button>
+              <button className={this.state.user.interests.politics ? "buttonTrue" : "poli-button"} onClick={this.handleSelect}>Politics</button>
+              <button className={this.state.user.interests.space ? "buttonTrue" : "space-button"} onClick={this.handleSelect}>Space</button>
+              <button className={this.state.user.interests.social_media ? "buttonTrue" : "socmed-button"} onClick={this.handleSelect}>Social Media</button>
+              <button className={this.state.user.interests.music ? "buttonTrue" : "music-button"} onClick={this.handleSelect}>Music</button>
+              <button className={this.state.user.interests.sports ? "buttonTrue" : "sports-button"} onClick={this.handleSelect}>Sports</button>
+              <button className={this.state.user.interests.pop_culture ? "buttonTrue" : "popcul-button"} onClick={this.handleSelect}>Pop Culture</button>
             </div>
 
             <div className="hobbies-array">
               <h2 className="hobbies-label">My Hobbies:</h2>
-              <button className={this.state.button ? "buttonTrue" : "hob-button"} onClick={this.handleSelect}>Cooking</button>
-              <button className="hob-button">Jogging</button>
-              <button className="hob-button">Bar Hopping</button>
-              <button className="hob-button">Dance</button>
-              <button className="hob-button">Movies</button>
-              <button className="hob-button">Hiking</button>
+              <button className={this.state.user.hobbies.cooking ? "buttonTrue" : "cook-button"} onClick={this.handleSelect}>Cooking</button>
+              <button className={this.state.user.hobbies.jogging ? "buttonTrue" : "jog-button"} onClick={this.handleSelect}>Jogging</button>
+              <button className={this.state.user.hobbies.bar_hopping ? "buttonTrue" : "barhop-button"} onClick={this.handleSelect}>Bar Hopping</button>
+              <button className={this.state.user.hobbies.dance ? "buttonTrue" : "dance-button"} onClick={this.handleSelect}>Dance</button>
+              <button className={this.state.user.hobbies.movies ? "buttonTrue" : "mov-button"} onClick={this.handleSelect}>Movies</button>
+              <button className={this.state.user.hobbies.hiking ? "buttonTrue" : "hike-button"} onClick={this.handleSelect}>Hiking</button>
             </div>
 
 
