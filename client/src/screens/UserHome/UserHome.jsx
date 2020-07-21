@@ -2,7 +2,7 @@ import React from "react"
 import "./UserHome.css"
 import LogInHeader from "../../components/shared/LogInHeader/LogInHeader"
 import Footer from "../../components/shared/Footer/Footer"
-// import WelcomeBanner from "../../components/shared/WelcomeBanner/WelcomeBanner"
+import WelcomeBanner from "../../components/shared/WelcomeBanner/WelcomeBanner"
 
 
 const UserHome = () => {
@@ -10,11 +10,11 @@ const UserHome = () => {
     <>
       <LogInHeader />
       <main>
-        {/* <WelcomeBanner /> */}
-        <table>
+        <WelcomeBanner />
+        <table className="activities-chart">
           <tbody>
             <tr className="rows">
-              <td><div className="local-events">Local Events</div></td>
+              <td className="local-events">Local Events</td>
               <td className="weather">Weather</td>
             </tr>
             <tr className="rows">
@@ -30,16 +30,7 @@ const UserHome = () => {
               <td className="shopping">Shopping</td>
             </tr>
           </tbody>
-
         </table>
-        {/* <div className="local-events">Local Events</div>
-        <div className="weather">Weather</div>
-        <div className="restaurants">Restaurants</div>
-        <div className="currency">Currency</div>
-        <div className="transportation">Transporation</div>
-        <div className="languages">Languages</div>
-        <div className="culture">Culture</div>
-        <div className="shopping">Shopping</div> */}
       </main>
       <Footer />
     </>
