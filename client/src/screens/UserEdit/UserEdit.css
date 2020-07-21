@@ -4,28 +4,17 @@
   align-items: center;
 } */
 
-.edit-title{
-
-}
-
-.to-from-location{
-
-}
-
 .from-input,
 .to-input,
 .education-input{
   font-size: 22px;  
 }
 
-/* .from-label,
-.to-label, */
 .education{
   justify-self: left;
   text-align: left;
   display: inline;
 }
-
 
 .select-all{
   font-style: italic;
@@ -79,7 +68,6 @@ line-height:26px;
   line-height: 26px;
   font-weight: 600;
 }
-
 
 .poli-button,
 .space-button,

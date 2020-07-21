@@ -20,7 +20,7 @@ class App extends Component {
   componentDidMount = async () => {
     const users = await getUsers();
     this.setState({
-      user: users[0],
+      user: users[users.length - 1],
     });
   };
 
