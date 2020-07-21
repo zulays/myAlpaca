@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./ManageProfile.css";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";

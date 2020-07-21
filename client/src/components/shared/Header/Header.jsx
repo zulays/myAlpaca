@@ -22,7 +22,6 @@ class Header extends Component {
 
 
   render() {
-    {/* if (user)    */ }
 
     return (
 

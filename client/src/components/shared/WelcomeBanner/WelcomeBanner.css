@@ -70,14 +70,14 @@
   flex-direction: column;
 }
 
-#welcomebanner-icon {
+/* #welcomebanner-icon {
   background-image: url("https://imgur.com/rkW60DZ");
   width: 19.41px;
   height: 27.73px;
   left: 771.4px;
   top: 231.28px;
   transform: rotate(-36.63deg);
-}
+} */
 
 .welcomebanner-heart {
   left: 0%;
