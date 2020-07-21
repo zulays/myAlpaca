@@ -3,11 +3,13 @@ import "./ManageProfile.css";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
 import { Link } from "react-router-dom";
+import WelcomeBanner from "../../components/shared/WelcomeBanner/WelcomeBanner";
 
 const ManageProfile = () => {
   return (
     <>
       <Header />
+      <WelcomeBanner />
       <div className="manageprofile-bigger">
         <h1 className="manageprofile-manage">Manage My Profile</h1>
         <div className="manageprofile-container">
