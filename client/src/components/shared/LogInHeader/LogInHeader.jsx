@@ -14,10 +14,10 @@ const LogInHeader = () => {
 
       <div className="header-icon-bar">
         <div className="logo-set">
-          <img src="#" alt="myalpaca-logo" className="myalpaca-logo" />
+          <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/alpaca-logo_igwnih.png" alt="myalpaca-logo" className="myalpaca-logo" />
           <h1 className="logo-text">myAlpaca</h1>
         </div>
-        <img src="#" alt="profile-icon" className="profile-icon" />
+        <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595284487/Untitled_Artwork_4_g7su9q.png" alt="profile-icon" className="profile-icon" />
       </div>
 
       <div className="header-nav-bar">

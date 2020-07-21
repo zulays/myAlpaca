@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import "./UserEdit.css";
-import Header from "../../components/shared/Header/Header";
-import Footer from "../../components/shared/Footer/Footer";
-// import { Redirect } from "react-router-dom";
+import React, { Component } from "react"
+import "./UserEdit.css"
+import Header from "../../components/shared/Header/Header"
+import Footer from "../../components/shared/Footer/Footer"
+import { Redirect } from "react-router-dom";
 import { updateUser } from "../../services/users";
 class UserEdit extends Component {
   constructor() {
@@ -69,8 +69,7 @@ class UserEdit extends Component {
     const { user, updated } = this.state;
 
     if (updated) {
-      return;
-      // <Redirect to={"/userhome"} />
+      return <Redirect to={`/userhome`} />
     }
     return (
       <>
