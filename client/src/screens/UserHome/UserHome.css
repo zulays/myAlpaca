@@ -23,42 +23,42 @@ td{
 
 
 .local-events{
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/dd495a31d0f50b1693d765dcd7de42e76ac7c185);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/localevents_l9rgb6.jpg);
   background-size: cover;
 }
 
 
 .weather{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/e04d40033bf6040c0bd4f9e7ecb38074216b8ea4);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/weather_kkfrws.png);
 background-size: cover;
 }
 
 .restaurants{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/81e780781acb6a918bde84128fee3b0d0191a576);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359269/myalpaca/restaurants_ky3iid.png);
 background-size: cover;
 }
 
 .currency{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/9ad9fe0969fb91d1708e668c9a1fa0ad1d7be3e1);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/money_qitk7o.jpg);
 background-size: cover;
 }
 
 .transportation{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/e94e432bd407727385abe58bee8974c031c57b64);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/ip6fvtymj4zhz6p57v3d.jpg);
 background-size: cover;
 }
 
 .languages{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/2a06f1b40c2bb3edadbeaf9f649da4517ea52175);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/lang_g62jtc.jpg);
 background-size: cover;
 }
 
 .culture{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://www.figma.com/file/pme7wqE5MHOLBZhH9MAQ68/image/4f857efbb8da9442c439704c56a0be9a4898b942);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/culture_wlcgu9.jpg);
 background-size: cover;
 }
 
 .shopping{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://s3-alpha-sig.figma.com/img/4483/148f/b2f1b656582c3922a6e4f86faadafa60?Expires=1595808000&Signature=OHREGVnYyjrvUTkZp8kyZcDIbOFzwXUl27f5gN3zwrfg-BowKZWsFG5aquGoNmdSClBqGtj3TF8cXTbwrMzgy-5KEzzG3e2Vbu8KXnX2HuszYv5bBSirfV-8hE1BSbCRFjZgwfw2XqPaejAGjESvwJTv9R3ycFx4nj5mK7jpLsqckE8lsZaGwt5ozdsiuyXo7DiV3N-fPnC4QU7v2Gl4SQh~txwgZoR1Lnhd~rUYw151oToAyuCjLDXwBYMJ1gY86XWXvxYrOL~srujQwIyRwk5rbikoP7lplHj9fGXaRVeeAZnrJBTIm0vsLfY5I6VTDYaDdo2iOS3GhRpqw0LEqg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359269/myalpaca/shopping_vfgsop.jpg);
 background-size: cover;
 }
