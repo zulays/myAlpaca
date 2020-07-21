@@ -69,13 +69,6 @@ line-height:26px;
   font-weight: 600;
 }
 
-.buttonFalse{
-  margin: 15px;
-  padding: 40px;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 600;
-}
 
 .buttonTrue{
   border: 3px solid #FFBE5C;
@@ -115,6 +108,31 @@ line-height:26px;
   font-weight: 600;
 }
 
+.lang-button,
+.house-button,
+.curr-button,
+.visa-button,
+.localcon-button,
+.maps-button{
+  margin: 15px;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.acad-button,
+.cul-button,
+.shop-button,
+.sightsee-button,
+.spirit-button,
+.staytouch-button{
+  margin: 15px;
+  padding: 40px;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
 
 
 .doneProfile-button{
