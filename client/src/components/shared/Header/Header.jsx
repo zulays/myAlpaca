@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
 
-    <header>
+    <header className="header">
 
       <div className="ticker-tape">
         <p className="ticker-tape-text">Click Here to Learn More about COVID-19 Travel Advisories</p>
@@ -18,18 +18,19 @@ const Header = () => {
           <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/alpaca-logo_igwnih.png" alt="myalpaca-logo" className="myalpaca-logo" />
           <h1 className="logo-text">myAlpaca</h1>
         </div>
-        <Link to="/usercreate">  <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/profile-icon_jwxqyj.png" alt="profile-icon" className="profile-icon" /> </Link>
+        <div className="userprofile-signup">
+          <Link to="/usercreate">  <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/profile-icon_jwxqyj.png" alt="profile-icon" className="nouser-profile-icon" /> <br /><p className="nouser-side-text">Sign Up</p> </Link>
+        </div>
       </div>
 
 
 
-      <ul className="header-nav-bar">
-        <li>About</li>
-        <li>Reviews</li>
-        <li>Contact</li>
-        <li>FAQ</li>
-        <Link to="/usercreate"> <li className="side-text">Sign Up</li> </Link>
-      </ul>
+      <div className="header-nav-bar">
+        <h3>About</h3>
+        <h3>Reviews</h3>
+        <h3>Contact</h3>
+        <h3>FAQ</h3>
+      </div>
 
     </header>
   )
