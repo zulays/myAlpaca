@@ -20,6 +20,10 @@ class UserCreate extends Component {
     };
   }
 
+  //remove state & handlechange 
+  //move to app file 
+
+
   handleChange = (event) => {
     const { name, value } = event.target;
     this.setState({
