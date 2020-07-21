@@ -15,9 +15,9 @@ const Footer = () =>
       <div className="social">
         <p>Find Us on Social</p>
         <div className="social-images">
-          <a href="https://www.facebook.com/groups/Alpacafarmlife/" title="Alpaca's Facebook" target="_blank"><img src="" alt="Facebook Icon"></img></a>
-          <a href="https://twitter.com/hashtag/alpacas?f=image" title="Alpaca's Twitter" target="_blank"><img src="" alt="Twitter Icon"></img></a>
-          <a href="https://www.pinterest.com/knitcrazedgirl/alpacas/" title="Alpaca's Pintrest" target="_blank"><img src="" alt="Pintrest Icon"></img></a>
+          <a href="https://www.facebook.com/groups/Alpacafarmlife/" title="Alpaca's Facebook" target="_blank"><img src="https://i.imgur.com/2TqgwYD.jpg" alt="Facebook Icon"></img></a>
+          <a href="https://twitter.com/hashtag/alpacas?f=image" title="Alpaca's Twitter" target="_blank"><img src="https://i.imgur.com/JfHhwjh.jpg" alt="Twitter Icon"></img></a>
+          <a href="https://www.pinterest.com/knitcrazedgirl/alpacas/" title="Alpaca's Pintrest" target="_blank"><img src="https://i.imgur.com/DAUWYMu.jpg" alt="Pintrest Icon"></img></a>
         </div>
       </div>
       <div className="term-use">

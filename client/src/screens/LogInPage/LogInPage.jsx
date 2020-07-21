@@ -1,17 +1,16 @@
 import React from "react"
 import "./LogInPage.css"
-// import Header from "../../components/shared/Header/Header"
+import Header from "../../components/shared/Header/Header"
 import Footer from "../../components/shared/Footer/Footer"
-import LogInHeader from "../../components/shared/LogInHeader/LogInHeader"
 import { Link } from "react-router-dom"
 
 const LogInPage = () => {
   return (
     <>
-      <LogInHeader />
+      <Header />
       <main>
         <h1>Log In</h1>
-        <p>Don't have an account? <Link to="/usercreate" className="register-text"><span className="register-text" fontWeight="700">Register</span></Link> today!</p>
+        <p className="login-subtext">Don't have an account? <Link to="/usercreate"><span fontWeight="700" className="register-text">Register</span></Link> today!</p>
         <form className="login-form">
           <label>Username or Email Address</label>
           <input type="text" className="inputs" />
