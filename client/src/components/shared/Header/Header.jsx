@@ -28,7 +28,7 @@ const Header = () => {
         <li>Reviews</li>
         <li>Contact</li>
         <li>FAQ</li>
-        <Link to="/usercreate"> <li className="side-text">Profile</li> </Link>
+        <Link to="/usercreate"> <li className="side-text">Sign Up</li> </Link>
       </ul>
 
     </header>
