@@ -26,13 +26,14 @@ class App extends Component {
   };
 
   render() {
+    console.log(this.state.user)
     return (
       <div className="App">
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/login" component={LogInPage}></Route>
         <Route exact path="/manageprofile" component={ManageProfile}></Route>
-        {this.state.user && <Route exact path="/userdelete" render={() => <UserDelete user={this.state.user} />}></Route>}
-        {this.state.user && <Route exact path="/useredit" render={() => <UserEdit user={this.state.user} />}></Route>}
+        {this.state.user && <Route exact path="/userdelete" render={() => <UserDelete user={this.state.user} />} />}
+        {this.state.user && <Route exact path="/useredit" render={() => <UserEdit user={this.state.user} />} />}
         <Route exact path="/userhome" component={UserHome}></Route>
         <Route path="/usercreate" component={UserCreate}></Route>
       </div>

@@ -33,7 +33,9 @@ class UserCreate extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     if (this.state.user.password === this.state.user.confirm) {
+      console.log("we made it")
       const created = await createUser(this.state.user);
+      console.log(created)
       this.setState({ created });
     }
   };
@@ -42,7 +44,9 @@ class UserCreate extends Component {
     const { user, created } = this.state;
 
     if (created) {
+      console.log(created)
       return <Redirect to={`/useredit`} />;
+
     }
     return (
       <>
@@ -102,13 +106,13 @@ class UserCreate extends Component {
               questions.
             </p>
             <div className="usercreate-register-container">
-              <Link to={"/useredit"} className="usercreate-link">
-                <input
-                  className="usercreate-rectangle-14"
-                  type="submit"
-                  value="Register"
-                />
-              </Link>
+              {/* <Link to={"/useredit"} className="usercreate-link"> */}
+              <input
+                className="usercreate-rectangle-14"
+                type="submit"
+                value="Register"
+              />
+              {/* </Link> */}
             </div>
           </form>
         </div>
