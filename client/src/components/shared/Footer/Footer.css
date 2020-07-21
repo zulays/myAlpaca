@@ -1,7 +1,6 @@
 .footer {
   background: #FBFCE6;
   padding-bottom: 12%;
-  /* padding: 0 5%; */
   font-family: Roboto;
   color: #626262;
 }
@@ -41,7 +40,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  /* line-height: 18px; */
   text-align: center;
   color: #626262;
 }
@@ -58,6 +56,16 @@
   padding-top: 15px;
 }
 
-a {
+.footer-a  {
   text-decoration: none;
+  color: #626262;
+}
+
+.social-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: bold;
 }

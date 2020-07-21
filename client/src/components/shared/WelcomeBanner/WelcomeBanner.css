@@ -1,0 +1,134 @@
+.welcomebanner-biggest {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-evenly;
+}
+
+.welcomebanner-container {
+  margin-bottom: 3px;
+}
+.welcomebanner-welcome-back {
+  width: 211px;
+  height: 28px;
+  left: 77px;
+  top: 194px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #231f20;
+  margin-bottom: 8px;
+}
+
+.welcomebanner-iris {
+  color: #025700;
+}
+.welcomebanner-first {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  width: 291px;
+  height: 21px;
+  left: 78px;
+  top: 232px;
+  text-align: center;
+}
+
+.welcomebanner-destination {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.welcomebanner-no-longer-here {
+  font-size: 14px;
+  line-height: 16px;
+  color: #605d5d;
+  padding-left: 20px;
+}
+
+.welcomebanner-input {
+  width: 338px;
+  height: 37px;
+  left: 462px;
+  top: 216px;
+  background: #ffffff;
+  border: 1px solid #605d5d;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-left: 23px;
+}
+
+.welcomebanner-second-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #welcomebanner-icon {
+  background-image: url("https://imgur.com/rkW60DZ");
+  width: 19.41px;
+  height: 27.73px;
+  left: 771.4px;
+  top: 231.28px;
+  transform: rotate(-36.63deg);
+} */
+
+.welcomebanner-heart {
+  left: 0%;
+  right: 0%;
+  top: 5.47%;
+  bottom: 5.56%;
+
+  background: #ffffff;
+}
+
+.welcomebanner-frame14 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 215px;
+  height: 49px;
+  left: 0px;
+  top: 0px;
+  background: #638d62;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.welcomebanner-favorites {
+  width: 140px;
+  height: 28px;
+  left: 65px;
+  top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fbfce6;
+}
+
+.welcomebanner-learn {
+  margin-bottom: 0;
+  width: 349px;
+  height: 26px;
+  left: 458px;
+  top: 187px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 26px;
+
+  text-align: center;
+
+  color: #231f20;
+}
