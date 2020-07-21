@@ -3,10 +3,12 @@ import "./UserEdit.css"
 import Header from "../../components/shared/Header/Header"
 import Footer from "../../components/shared/Footer/Footer"
 import { Redirect } from "react-router-dom";
-import { updateUser } from "../../services/users";
+import { getUser, updateUser } from "../../services/users";
+
+
 class UserEdit extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       user: {
         from_location: "",
@@ -83,7 +85,6 @@ class UserEdit extends Component {
   };
 
   handleSelect = (e) => {
-
     const { name } = e.target
     console.log(e.target.dataset)
     const { category } = e.target.dataset
@@ -98,9 +99,62 @@ class UserEdit extends Component {
     }));
   };
 
-  componentDidMount = () => {
+  componentDidMount = async () => {
     //update current user with existing parameters
     //update state from existing changes
+    const userEdit = this.props.user._id
+    console.log(this.props)
+    const user = await getUser(userEdit)
+    console.log(user)
+    this.setState({
+      user: {
+        from_location: "",
+        to_location: "",
+        education: "",
+        area_of_study: {
+          art: false,
+          science: false,
+          math: false,
+          literature: false,
+          liberal_arts: false,
+          healthcare: false
+        },
+        interests: {
+          politics: false,
+          space: false,
+          social_media: false,
+          music: false,
+          sports: false,
+          pop_culture: false
+        },
+        hobbies: {
+          cooking: false,
+          jogging: false,
+          bar_hopping: false,
+          dance: false,
+          movies: false,
+          hiking: false
+        },
+        assistance: {
+          language: false,
+          housing: false,
+          currency: false,
+          visa: false,
+          local_connections: false,
+          maps: false
+        },
+        priorities: {
+          academics: false,
+          culture: false,
+          shopping: false,
+          sightseeing: false,
+          spiritually: false,
+          staying_in_touch: false
+        }
+      },
+      updated: false,
+      button: false,
+    })
 
   }
 
@@ -119,38 +173,22 @@ class UserEdit extends Component {
             <h2>Tell us more about you...</h2>
             <p>You can always come back and add more!</p>
           </div>
+
           <div className="to-from-location">
             <label className="from-label">I am coming from:</label>
-            <input
-              type="text"
-              name="from_location"
-              onChange={this.handleChange}
-              value={this.state.user.from_location}
-              className="from-input"
-            ></input>
-            {/* data- stores info */}
+            <input type="text" name="from_location" onChange={this.handleChange} value={this.state.user.from_location} className="from-input" ></input>
             <label className="to-label">I am going to: </label>
-            <input
-              type="text"
-              name="to_location"
-              onChange={this.handleChange}
-              value={this.state.user.to_location}
-              className="to-input"
-            ></input>
+            <input type="text" name="to_location" onChange={this.handleChange} value={this.state.user.to_location} className="to-input" ></input>
           </div>
+
           <label className="education">My Academic Instituion:</label>{" "}
-          <input
-            type="text"
-            name="education"
-            onChange={this.handleChange}
-            value={this.state.user.education}
-            className="education-input"
-          ></input>
+          <input type="text" name="education" onChange={this.handleChange} value={this.state.user.education} className="education-input"></input>
+
           <p className="select-all">Select all that apply</p>
+
           <div className="edit-options">
             <div className="subjects-array">
               <h2 className="subjects-label">Area of Study:</h2>
-
               <button className={this.state.user.area_of_study.art ? "buttonTrue" : "art-button"} name="art" value={this.state.user.area_of_study.art} data-category="area_of_study" onClick={this.handleSelect}>Art</button>
               <button className={this.state.user.area_of_study.science ? "buttonTrue" : "science-button"} name="science" value={this.state.user.area_of_study.science} data-category="area_of_study" onClick={this.handleSelect}>Science</button>
               <button className={this.state.user.area_of_study.math ? "buttonTrue" : "math-button"} name="math" value={this.state.user.area_of_study.math} data-category="area_of_study" onClick={this.handleSelect}>Math</button>
@@ -161,7 +199,6 @@ class UserEdit extends Component {
 
             <div className="interests-array">
               <h2 className="interests-label">My Interests:</h2>
-
               <button className={this.state.user.interests.politics ? "buttonTrue" : "poli-button"} data-category="interests" onClick={this.handleSelect} name="politics">Politics</button>
               <button className={this.state.user.interests.space ? "buttonTrue" : "space-button"} data-category="interests" onClick={this.handleSelect} name="space">Space</button>
               <button className={this.state.user.interests.social_media ? "buttonTrue" : "socmed-button"} data-category="interests" onClick={this.handleSelect} name="social_media">Social Media</button>
@@ -172,7 +209,6 @@ class UserEdit extends Component {
 
             <div className="hobbies-array">
               <h2 className="hobbies-label">My Hobbies:</h2>
-
               <button className={this.state.user.hobbies.cooking ? "buttonTrue" : "cook-button"} name="cooking" data-category="hobbies" onClick={this.handleSelect}>Cooking</button>
               <button className={this.state.user.hobbies.jogging ? "buttonTrue" : "jog-button"} name="jogging" data-category="hobbies" onClick={this.handleSelect}>Jogging</button>
               <button className={this.state.user.hobbies.bar_hopping ? "buttonTrue" : "barhop-button"} name="bar_hopping" data-category="hobbies" onClick={this.handleSelect}>Bar Hopping</button>
@@ -183,7 +219,6 @@ class UserEdit extends Component {
 
             <div className="assistance-array">
               <h2 className="assistance-label">I could use some help with:</h2>
-
               <button className={this.state.user.assistance.language ? "buttonTrue" : "lang-button"} name="language" data-category="assistance" onClick={this.handleSelect}>Language</button>
               <button className={this.state.user.assistance.housing ? "buttonTrue" : "house-button"} name="housing" data-category="assistance" onClick={this.handleSelect}>Housing</button>
               <button className={this.state.user.assistance.currency ? "buttonTrue" : "curr-button"} name="currency" data-category="assistance" onClick={this.handleSelect}> Currency</button>
@@ -202,9 +237,8 @@ class UserEdit extends Component {
               <button className={this.state.user.priorities.staying_in_touch ? "buttonTrue" : "staytouch-button"} name="staying_in_touch" value={this.state.user.priorities.staying_in_touch} data-category="priorities" onClick={this.handleSelect} > Staying in Touch  </button>
             </div>
           </div>
-          <button className="doneProfile-button" onClick={this.handleSubmit}>
-            Done
-          </button>
+
+          <button className="doneProfile-button" onClick={this.handleSubmit}>Done</button>
         </main>
 
         <Footer />

@@ -19,9 +19,6 @@ class App extends Component {
 
   componentDidMount = async () => {
     const users = await getUsers();
-    console.log(users[0]);
-    console.log(users[0]._id);
-
     this.setState({
       user: users[0],
     });
