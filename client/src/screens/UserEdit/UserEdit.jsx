@@ -168,8 +168,8 @@ class UserEdit extends Component {
             <div className="assistance-array">
               <h2 className="assistance-label">I could use some help with:</h2>
               <button className={this.state.button ? "buttonTrue" : "ast-button"} onClick={this.handleSelect}>Language</button>
-              <button className="ast-button">Housing</button>
-              <button className="ast-button">Currency</button>
+              <button className={this.state.user.assistance.housing ? "buttonTrue" : "house-button"} data-category="assistance" onClick={this.handleSelect}>Housing</button>
+              <button className={this.state.user.assistance.currency ? "buttonTrue" : "curr-button"} data-category="currency">Currency</button>
               <button className="ast-button">Visa</button>
               <button className="ast-button">Local Connections</button>
               <button className="ast-button">Maps</button>
