@@ -1,17 +1,16 @@
-main{
+.login-body{
   position: relative;
   font-family: "Roboto", sans-serif;
-  /* text-align: center; */
   background-color: #FFFFFF;
   line-height: 21px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-
+  margin: 30px auto;
 }
  
-h1{
+.login-title{
   font-weight: bold;
   font-size: 24px;
   line-height: 26px;
@@ -33,7 +32,7 @@ h1{
   padding: 40px; 
 }
 
-input{
+.inputs{
   width: 243px;
   height: 41px;
   border: 1px solid #C4C4C4;
@@ -42,24 +41,27 @@ input{
   margin: 10px;
 }
 
-label{
+.inputs-label{
   font-size: 18px;
   color: #000000;
   margin: 10px;
+  cursor: default;
 }
 
 .forgot-pass{
   font-size: 14px;
   line-height: 16px;
+  margin: 10px;
 }
 
 .checkbox-inline{
   font-size: 18px;
   align-items: center;
+  margin: 10px;
 }
 
 
-.checkbox{
+.rem-checkbox{
   display: inline-block;
   width: 1.25em; height: 1.25em;
   border: 1px solid #C4C4C4;
@@ -68,13 +70,7 @@ label{
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   cursor: pointer;
-  
 }
-/* 
-.checkbox > input:checked {
-    border: 1px solid #41B883;
-    background-color: #34495E;
-} */
 
 
 .loginpage-button{
@@ -85,7 +81,10 @@ label{
   padding: 2px 10px;
   border-radius: 20px;
   border-style: none;
-  flex-shrink: 1;
+  width: 200px;
+  align-self: center;
+  font-weight: 600;
+
 }
 
 .register-text{
