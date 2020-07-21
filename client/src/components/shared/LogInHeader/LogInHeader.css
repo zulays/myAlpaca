@@ -1,0 +1,97 @@
+header{
+  /* flex: 1; */
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+h3{
+  margin: 0;
+}
+
+.ticker-tape{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 39px;
+  left: 0px;
+  top: 0px;
+  background-color: #FF835C;
+  color: #000000;
+}
+
+.ticker-tape-text{
+  height: 13px;
+  left: 0;
+  top: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.exit-banner{
+  margin-right: 5px;
+}
+
+.header-icon-bar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  height: 65px;
+}
+
+.logo-set{
+  margin-left: 20px;
+  text-align: left;
+}
+
+.myalpaca-logo{
+  height: 65px;
+}
+
+.logo-text{
+  display: inline;
+  text-align: left;
+  color: #025700;
+  font-size: 22px;
+  line-height: 26px;
+  padding: 5px; 
+}
+
+.profile-icon{
+  margin-right: 20px;
+  height: 100px;
+}
+
+.header-nav-bar{
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+  justify-content: space-around;
+  background-color: #025700;
+  list-style: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 10px;
+  line-height: 30px;
+  color: #FBFCE6;
+  
+}
+
+.logout-text{
+  display: inline;
+  margin-right: 6px; 
+  /* z-index: 1; */
+}
+
+.login-nav-text{
+  color: #FBFCE6;
+  text-decoration: none; 
+}
+
