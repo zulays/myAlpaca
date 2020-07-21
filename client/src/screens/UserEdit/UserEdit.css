@@ -15,16 +15,15 @@
 .from-input,
 .to-input,
 .education-input{
-font-size: 22px;
-
+  font-size: 22px;  
 }
 
 /* .from-label,
 .to-label, */
 .education{
   justify-self: left;
-text-align: left;
-display: inline;
+  text-align: left;
+  display: inline;
 }
 
 
@@ -35,7 +34,7 @@ display: inline;
 }
 
 .edit-options{
-padding: 40px;
+  padding: 40px;
 }
 
 .subjects-array,

@@ -153,7 +153,6 @@ class UserEdit extends Component {
       },
       updated: false
     })
-
   }
 
 
