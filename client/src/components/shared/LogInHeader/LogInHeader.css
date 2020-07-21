@@ -64,7 +64,6 @@ h3{
 }
 
 .profile-icon{
-  display: inline;
   margin-right: 20px;
   height: 100px;
 }
@@ -85,9 +84,14 @@ h3{
   
 }
 
-
 .logout-text{
   display: inline;
-  margin-right: 6px;
+  margin-right: 6px; 
   /* z-index: 1; */
 }
+
+.login-nav-text{
+  color: #FBFCE6;
+  text-decoration: none; 
+}
+
