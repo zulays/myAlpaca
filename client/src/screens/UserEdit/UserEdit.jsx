@@ -104,6 +104,7 @@ class UserEdit extends Component {
     //update state from existing changes
     const userEdit = this.props.user._id
     const user = await getUser(userEdit)
+    console.log(user)
     this.setState({
       user: {
         from_location: user.from_location,
@@ -111,47 +112,46 @@ class UserEdit extends Component {
         education: user.education,
         area_of_study: {
           art: user.area_of_study.art,
-          science: false,
-          math: false,
-          literature: false,
-          liberal_arts: false,
-          healthcare: false
+          science: user.area_of_study.science,
+          math: user.area_of_study.math,
+          literature: user.area_of_study.literature,
+          liberal_arts: user.area_of_study.liberal_arts,
+          healthcare: user.area_of_study.healthcare
         },
         interests: {
-          politics: false,
-          space: false,
-          social_media: false,
-          music: false,
-          sports: false,
-          pop_culture: false
+          politics: user.interests.politics,
+          space: user.interests.space,
+          social_media: user.interests.social_media,
+          music: user.interests.music,
+          sports: user.interests.sports,
+          pop_culture: user.interests.pop_culture
         },
         hobbies: {
-          cooking: false,
-          jogging: false,
-          bar_hopping: false,
-          dance: false,
-          movies: false,
-          hiking: false
+          cooking: user.hobbies.cooking,
+          jogging: user.hobbies.jogging,
+          bar_hopping: user.hobbies.bar_hopping,
+          dance: user.hobbies.dance,
+          movies: user.hobbies.movies,
+          hiking: user.hobbies.hiking
         },
         assistance: {
-          language: false,
-          housing: false,
-          currency: false,
-          visa: false,
-          local_connections: false,
-          maps: false
+          language: user.assistance.language,
+          housing: user.assistance.housing,
+          currency: user.assistance.currency,
+          visa: user.assistance.visa,
+          local_connections: user.assistance.local_connections,
+          maps: user.assistance.maps
         },
         priorities: {
-          academics: false,
-          culture: false,
-          shopping: false,
-          sightseeing: false,
-          spiritually: false,
-          staying_in_touch: false
+          academics: user.priorities.academics,
+          culture: user.priorities.culture,
+          shopping: user.priorities.shopping,
+          sightseeing: user.priorities.sightseeing,
+          spiritually: user.priorities.spiritually,
+          staying_in_touch: user.priorities.staying_in_touch
         }
       },
-      updated: false,
-      button: false,
+      updated: false
     })
 
   }
