@@ -127,22 +127,69 @@ class UserEdit extends Component {
               </button>
               <button
                 className={
-                  this.state.button ? "sci-buttonTrue" : "science-button"
+                  this.state.user.area_of_study.science
+                    ? "buttonTrue"
+                    : "science-button"
                 }
                 name="science"
-                value="false"
+                value={this.state.user.area_of_study.science}
+                data-category="area_of_study"
                 onClick={this.handleSelect}
               >
                 Science
               </button>
-              <button className="math-button"> Math</button>
-              <button className="lit-button" onClick={this.handleSelect}>
+              <button
+                className={
+                  this.state.user.area_of_study.math
+                    ? "buttonTrue"
+                    : "math-button"
+                }
+                name="math"
+                value={this.state.user.area_of_study.math}
+                data-category="area_of_study"
+                onClick={this.handleSelect}
+              >
+                Math
+              </button>
+
+              <button
+                className={
+                  this.state.user.area_of_study.literature
+                    ? "buttonTrue"
+                    : "literature-button"
+                }
+                name="literature"
+                value={this.state.user.area_of_study.literature}
+                data-category="area_of_study"
+                onClick={this.handleSelect}
+              >
                 Literature
               </button>
-              <button className="la-button" onClick={this.handleSelect}>
+
+              <button
+                className={
+                  this.state.user.area_of_study.liberal_arts
+                    ? "buttonTrue"
+                    : "liberal_arts-button"
+                }
+                name="liberal_arts"
+                value={this.state.user.area_of_study.liberal_arts}
+                data-category="area_of_study"
+                onClick={this.handleSelect}
+              >
                 Liberal Arts
               </button>
-              <button className="health-button" onClick={this.handleSelect}>
+              <button
+                className={
+                  this.state.user.area_of_study.health
+                    ? "buttonTrue"
+                    : "health-button"
+                }
+                name="health"
+                value={this.state.user.area_of_study.health}
+                data-category="area_of_study"
+                onClick={this.handleSelect}
+              >
                 Healthcare
               </button>
             </div>
@@ -187,24 +234,125 @@ class UserEdit extends Component {
               </button>
               <button className="ast-button">Housing</button>
               <button className="ast-button">Currency</button>
-              <button className="ast-button">Visa</button>
-              <button className="ast-button">Local Connections</button>
-              <button className="ast-button">Maps</button>
+              <button
+                className={
+                  this.state.user.assistance.visa ? "buttonTrue" : "visa"
+                }
+                name="visa"
+                value={this.state.user.assistance.visa}
+                data-category="assistance"
+                onclick={this.handleSelect}
+              >
+                Visa
+              </button>
+              <button
+                className={
+                  this.state.user.assistance.local_connections
+                    ? "buttonTrue"
+                    : "local_connections-button"
+                }
+                name="local_connections"
+                value={this.state.user.assistance.local_connections}
+                data-category="assistance"
+                onClick={this.handleSelect}
+              >
+                Local Connections
+              </button>
+
+              <button
+                className={
+                  this.state.user.assistance.maps ? "buttonTrue" : "maps-button"
+                }
+                name="maps"
+                value={this.state.user.assistance.maps}
+                data-category="assistance"
+                onClick={this.handleSelect}
+              >
+                Maps
+              </button>
             </div>
 
             <div className="priorities-array">
               <h2 className="priorities-label">My priorities are:</h2>
               <button
-                className={this.state.button ? "buttonTrue" : "buttonFalse"}
+                className={
+                  this.state.user.priorities.academics
+                    ? "buttonTrue"
+                    : "academics-button"
+                }
+                name="academics"
+                value={this.state.user.priorities.academics}
+                data-category="priorities"
                 onClick={this.handleSelect}
               >
                 Academics
               </button>
-              <button className="pri-button">Culture</button>
-              <button className="pri-button">Shopping</button>
-              <button className="pri-button">Sightseeing</button>
-              <button className="pri-button">Spirituality</button>
-              <button className="pri-button">Staying in Touch</button>
+              <button
+                className={
+                  this.state.user.priorities.culture
+                    ? "buttonTrue"
+                    : "culture-button"
+                }
+                name="culture"
+                value={this.state.user.priorities.culture}
+                data-category="priorities"
+                onClick={this.handleSelect}
+              >
+                Culture
+              </button>
+              <button
+                className={
+                  this.state.user.priorities.shopping
+                    ? "buttonTrue"
+                    : "shopping-button"
+                }
+                name="shopping"
+                value={this.state.user.priorities.shopping}
+                data-category="priorities"
+                onClick={this.handleSelect}
+              >
+                Shopping
+              </button>
+
+              <button
+                className={
+                  this.state.user.priorities.sightseeging
+                    ? "buttonTrue"
+                    : "sightseeing-button"
+                }
+                name="sightseeing"
+                value={this.state.user.priorities.sightseeging}
+                data-category="priorities"
+                onClick={this.handleSelect}
+              >
+                Sightseeing
+              </button>
+              <button
+                className={
+                  this.state.user.priorities.spirituality
+                    ? "buttonTrue"
+                    : "spirituality-button"
+                }
+                name="spirituality"
+                value={this.state.user.priorities.spirituality}
+                data-category="priorities"
+                onClick={this.handleSelect}
+              >
+                Spirituality
+              </button>
+              <button
+                className={
+                  this.state.user.priorities.staying_in_touch
+                    ? "buttonTrue"
+                    : "staying_in_touch-button"
+                }
+                name="staying_in_touch"
+                value={this.state.user.priorities.staying_in_touch}
+                data-category="priorities"
+                onClick={this.handleSelect}
+              >
+                Staying in Touch
+              </button>
             </div>
           </div>
           <button className="doneProfile-button" onClick={this.handleSubmit}>
