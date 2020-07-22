@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./UserDelete.css";
 import { deleteUser } from "../../services/users";
 import { Link } from "react-router-dom";
-import Header from "../../components/shared/Header/Header";
+import LogInHeader from "../../components/shared/LogInHeader/LogInHeader"
 import Footer from "../../components/shared/Footer/Footer";
 import WelcomeBanner from "../../components/shared/WelcomeBanner/WelcomeBanner";
 import { withRouter } from "react-router-dom";
@@ -17,7 +17,7 @@ class UserDelete extends Component {
   render() {
     return (
       <>
-        <Header />
+        <LogInHeader />
         <WelcomeBanner />
         <div className="userDelete-section">
           <p className="sorry-title">We are sorry to see you go...</p>
