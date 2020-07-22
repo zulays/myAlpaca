@@ -8,7 +8,7 @@ const LogInHeader = () => {
 
   return (
 
-    <header className="header-signup" >
+    <header className="header" >
       <div className="ticker-tape">
         <p className="ticker-tape-text">Click Here to Learn More about COVID-19 Travel Advisories</p>
         <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595437166/myalpaca/Close_button_ystvyf.png" alt="close banner" className="exit-banner" />
