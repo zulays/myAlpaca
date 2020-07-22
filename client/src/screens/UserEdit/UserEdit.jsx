@@ -2,9 +2,8 @@ import React, { Component } from "react";
 import "./UserEdit.css";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
-import { Redirect } from "react-router-dom";
+// import { Redirect } from "react-router-dom";
 
-// grab local state inside the component. keep state higher up. that's why we put usercreate/useredit in app.js. move the state of usereidt up
 
 class UserEdit extends Component {
   constructor(props) {
@@ -20,9 +19,9 @@ class UserEdit extends Component {
       handleEdit,
     } = this.props;
 
-    if (updated) {
-      // return <Redirect to={`/userhome`} />;
-    }
+    // if (updated) {
+    //   // return <Redirect to={`/userhome`} />;
+    // }
     return (
       <>
         <Header />
