@@ -74,7 +74,7 @@ class UserCreate extends Component {
           </p>
 
           <form className="usercreate-form" onSubmit={handleSubmit}>
-            <p className="username">Username *</p>
+            <p className="usercreate-username">Username *</p>
             <input
               className="usercreate-rectangle-21"
               type="text"
@@ -90,7 +90,6 @@ class UserCreate extends Component {
               type="text"
               // value={user.email}
               value={email}
-
               name="email"
               required
               autoFocus
@@ -119,8 +118,9 @@ class UserCreate extends Component {
             <p className="usercreate-personal">
               Your personal data will be used to support your experience
               throughout using this website and to manage access to your
-              account.Please see our <span>privacy policy</span> if you have any
-              questions.
+              account.Please see our{" "}
+              <span className="usercreate-privacy">privacy policy</span> if you
+              have any questions.
             </p>
             <div className="usercreate-register-container">
               <input
