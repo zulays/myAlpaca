@@ -9,47 +9,8 @@ class UserCreate extends Component {
   constructor(props) {
     super(props);
   }
-  // this.state = {
-  //   user: {
-  //     username: "",
-  //     email: "",
-  //     password: "",
-  //     confirm: "",
-  //   },
-  //   created: false,
-  // };
-  // }
-
-  // remove state & handlechange
-  // move to app file
-
-  // handleChange = (event) => {
-  //   const { name, value } = event.target;
-  //   this.setState({
-  //     user: {
-  //       ...this.state.user,
-  //       [name]: value,
-  //     },
-  //   });
-  // };
-
-  // handleSubmit = async (event) => {
-  //   event.preventDefault();
-  //   if (this.state.user.password === this.state.user.confirm) {
-  //     console.log("we made it");
-  //     const created = await createUser(this.state.user);
-  //     console.log(created);
-  //     this.setState({ created });
-  //   }
-  // };
 
   render() {
-    // const { user, created } = this.state;
-
-    // if (created) {
-    //   console.log(created);
-    //   return <Redirect to={`/useredit`} />;
-    // }
     const {
       username,
       password,
@@ -88,7 +49,6 @@ class UserCreate extends Component {
             <input
               className="usercreate-rectangle-23"
               type="text"
-              // value={user.email}
               value={email}
               name="email"
               required
