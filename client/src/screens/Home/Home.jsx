@@ -12,8 +12,11 @@ const Home = () => {
         <p className="home-hi">Hi there!</p>
         <div className="home-container3">
           <p className="home-paragraphs">
-            <span className="home-w">W</span>e are here to take the load off of
-            your study abroad planning and research, so you can enjoy your stay.
+            <div className="home-one-sentence">
+              <span className="home-w">W</span>e are here to take the load off
+              of your study
+            </div>
+            abroad planning and research, so you can enjoy your stay.
           </p>
           <p className="home-paragraphs">
             Start a profile and begin your study abroad adventure! Or just
@@ -40,7 +43,7 @@ const Home = () => {
         <div className="home-rosemary">
           <p className="home-sentence2">
             “I recommend myAlpaca to anyone who is planning on studying
-            abraod!!!”
+            abroad!!!”
           </p>
           <p className="home-name2"> -- Rosemary</p>
         </div>
