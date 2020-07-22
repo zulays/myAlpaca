@@ -8,33 +8,91 @@ import UserEdit from "./screens/UserEdit/UserEdit";
 import UserDelete from "./screens/UserDelete/UserDelete";
 import UserHome from "./screens/UserHome/UserHome";
 import Home from "./screens/Home/Home";
-import { getUsers } from "./services/users";
+import { getUsers, createUser } from "./services/users";
 
 class App extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
+    //   this.state = {
+    //     user: "",
+    //   };
+    // }
+
     this.state = {
-      user: "",
+      user: {
+        username: "",
+        email: "",
+        password: "",
+        confirm: "",
+      },
+      created: false,
     };
   }
 
-  componentDidMount = async () => {
-    const users = await getUsers();
+  //create intial state moves here
+  //handlechange moves here
+
+  handleChange = (event) => {
+    const { name, value } = event.target;
     this.setState({
-      user: users[users.length - 1],
+      user: {
+        ...this.state.user,
+        [name]: value,
+      },
     });
   };
 
+  handleSubmit = async (event) => {
+    event.preventDefault();
+    if (this.state.user.password === this.state.user.confirm) {
+      console.log("we made it");
+      const created = await createUser(this.state.user);
+      console.log(created);
+      this.setState({ user: created, created: true });
+    }
+  };
+
+  // populate pw, confirm, put in required field. don't pass id. fix line 59! 
+  // componentDidMount = async () => {
+  //   const users = await getUsers();
+  //   this.setState({
+  //     user: users[users.length - 1],
+  //   });
+  // };
+
   render() {
+    console.log(this.state.user);
     return (
       <div className="App">
         <Route exact path="/" component={Home}></Route>
         <Route exact path="/login" component={LogInPage}></Route>
         <Route exact path="/manageprofile" component={ManageProfile}></Route>
-        {this.state.user && <Route exact path="/userdelete" render={() => <UserDelete user={this.state.user} />}></Route>}
-        {this.state.user && <Route exact path="/useredit" render={() => <UserEdit user={this.state.user} />}></Route>}
+        {this.state.user && (
+          <Route
+            exact
+            path="/userdelete"
+            render={() => <UserDelete user={this.state.user} />}
+          />
+        )}
+        {this.state.user && (
+          <Route
+            exact
+            path="/useredit"
+            render={() => <UserEdit user={this.state.user} />}
+          />
+        )}
         <Route exact path="/userhome" component={UserHome}></Route>
-        <Route path="/usercreate" component={UserCreate}></Route>
+        <Route
+          path="/usercreate"
+          render={() => (
+            <UserCreate
+              created={this.state.created}
+              handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
+              user={this.state.user}
+            />
+          )}
+        ></Route>
       </div>
     );
   }

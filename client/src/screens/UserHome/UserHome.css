@@ -9,6 +9,7 @@
 }
 
 td{
+  font-family: "Roboto";
   border: 20px solid #ffffff;
   width: 430px;
   height: 230px;
@@ -23,42 +24,42 @@ td{
 
 
 .local-events{
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/localevents_l9rgb6.jpg);
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364804/myalpaca/LocalEventTile_ph2evx.png);
   background-size: cover;
 }
 
 
 .weather{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/weather_kkfrws.png);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364804/myalpaca/WeatherTile_uorovt.png);
 background-size: cover;
 }
 
 .restaurants{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359269/myalpaca/restaurants_ky3iid.png);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364804/myalpaca/RestaurantTile_tkekwe.png);
 background-size: cover;
 }
 
 .currency{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/money_qitk7o.jpg);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364823/myalpaca/CurrencyTile_evvgoo.png);
 background-size: cover;
 }
 
 .transportation{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/ip6fvtymj4zhz6p57v3d.jpg);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364804/myalpaca/TransportationTile_ftqiqt.png);
 background-size: cover;
 }
 
 .languages{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/lang_g62jtc.jpg);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364803/myalpaca/LanguageTile_n8lg2p.png);
 background-size: cover;
 }
 
 .culture{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359268/myalpaca/culture_wlcgu9.jpg);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364823/myalpaca/CultureTile_yuzo9u.png);
 background-size: cover;
 }
 
 .shopping{
-background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595359269/myalpaca/shopping_vfgsop.jpg);
+background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364803/myalpaca/ShoppingTile_sdwcz8.png);
 background-size: cover;
 }

@@ -33,12 +33,12 @@ class Header extends Component {
 
         <div className="header-icon-bar">
           <div className="logo-set">
-            <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/alpaca-logo_igwnih.png" alt="myalpaca-logo" className="myalpaca-logo" />
+            <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595369300/myalpaca/alpaca-logo-UPDATED_nat42o.png" alt="myalpaca-logo" className="myalpaca-logo" />
             <h1 className="logo-text">myAlpaca</h1>
           </div>
 
           <div className="userprofile-signup">
-            <Link to="/usercreate">  <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/profile-icon_jwxqyj.png" alt="profile-icon" className="nouser-profile-icon" /> <br /><p className="nouser-side-text">Sign Up</p> </Link>
+            <Link to="/usercreate">  <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595369300/myalpaca/profile-icon-update_ifapdk.png" alt="profile-icon" className="nouser-profile-icon" /> <br /><p className="nouser-side-text">Sign Up</p> </Link>
           </div>
         </div>
 
