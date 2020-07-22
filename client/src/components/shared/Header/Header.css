@@ -47,6 +47,7 @@ h3{
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  margin-left: 71px;
   bottom: 0;
   height: 65px;
 }
@@ -86,7 +87,7 @@ h3{
 }
 
 .userprofile-signup{
-  margin-right: 10px;
+  margin-right: 62px;
   margin-top: 10px;
   text-align: center;
 }
