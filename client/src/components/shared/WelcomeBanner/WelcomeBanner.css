@@ -70,21 +70,11 @@
   flex-direction: column;
 }
 
-/* #welcomebanner-icon {
-  background-image: url("https://imgur.com/rkW60DZ");
-  width: 19.41px;
-  height: 27.73px;
-  left: 771.4px;
-  top: 231.28px;
-  transform: rotate(-36.63deg);
-} */
-
 .welcomebanner-heart {
   left: 0%;
   right: 0%;
   top: 5.47%;
   bottom: 5.56%;
-
   background: #ffffff;
 }
 
@@ -121,14 +111,11 @@
   height: 26px;
   left: 458px;
   top: 187px;
-
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 22px;
   line-height: 26px;
-
   text-align: center;
-
   color: #231f20;
 }
