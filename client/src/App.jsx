@@ -67,8 +67,6 @@ class App extends Component {
     };
   }
 
-  //create intial state moves here
-  //handlechange moves here
 
   handleChange = (event) => {
     const { name, value } = event.target;
@@ -83,14 +81,11 @@ class App extends Component {
   handleSubmit = async (event) => {
     event.preventDefault();
     if (this.state.user.password === this.state.user.confirm) {
-      console.log("we made it");
-      // const created = await createUser(this.state.user);
       const created = await createUser({
         username: this.state.user.username,
         email: this.state.user.email,
         password: this.state.user.password,
       });
-      console.log(created);
       this.setState({ user: created, created: true });
     }
   };
@@ -108,7 +103,6 @@ class App extends Component {
 
   handleSelect = (e) => {
     const { name } = e.target;
-    // console.log(e.target.dataset);
     const { category } = e.target.dataset;
     this.setState((prevState) => ({
       user: {
@@ -121,7 +115,6 @@ class App extends Component {
     }));
   };
 
-  // populate pw, confirm, put in required field. don't pass id. fix line 59!
   componentDidMount = async () => {
     const users = await getUsers();
     const user = users[users.length - 1];
@@ -179,7 +172,6 @@ class App extends Component {
   };
 
   render() {
-    // console.log(this.state.user);
     return (
       <div className="App">
         <Route exact path="/" component={Home}></Route>
