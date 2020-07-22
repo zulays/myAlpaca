@@ -2,10 +2,20 @@ import React, { Component } from "react";
 import "./UserDelete.css";
 import { deleteUser } from "../../services/users";
 import { Link } from "react-router-dom";
-import Header from "../../components/shared/Header/Header"
-import Footer from "../../components/shared/Footer/Footer"
+import Header from "../../components/shared/Header/Header";
+import Footer from "../../components/shared/Footer/Footer";
+import { withRouter } from "react-router-dom";
 
 class UserDelete extends Component {
+  // make handledelete = method and arrow function.
+  // call delete functions
+  // history.push()....look at the reference(handleEdit).
+  // wrap it in  withRouter
+
+  handleDelete = async () => {
+    const deleted = await deleteUser(this.props.user._id);
+    this.props.history.push("/");
+  };
 
   render() {
     return (
@@ -34,7 +44,7 @@ class UserDelete extends Component {
                 ></input>
                 <label htmlFor="not-useful">
                   I didn't find the website useful
-              </label>
+                </label>
               </div>
               <div className="wrong-info">
                 <input
@@ -45,21 +55,18 @@ class UserDelete extends Component {
                 ></input>
                 <label htmlFor="wrong-info">
                   Website provided wrong information
-              </label>
+                </label>
               </div>
             </div>
           </div>
           <div className="buttons-div">
-            <button
-              className="delete-button"
-              onClick={() => deleteUser(this.props.user._id)}
-            >
+            <button className="delete-button" onClick={this.handleDelete}>
               Delete Profile
-          </button>
+            </button>
             <button className="cancel-button">
               <Link className="cancel-link" to={`/manageprofile`}>
                 Cancel
-            </Link>
+              </Link>
             </button>
           </div>
         </div>
@@ -69,4 +76,4 @@ class UserDelete extends Component {
   }
 }
 
-export default UserDelete;
+export default withRouter(UserDelete);

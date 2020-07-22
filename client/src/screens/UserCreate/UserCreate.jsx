@@ -50,7 +50,15 @@ class UserCreate extends Component {
     //   console.log(created);
     //   return <Redirect to={`/useredit`} />;
     // }
-    const { user, created, handleChange, handleSubmit } = this.props;
+    const {
+      username,
+      password,
+      email,
+      confirm,
+      created,
+      handleChange,
+      handleSubmit,
+    } = this.props;
     if (created) {
       console.log(created);
       return <Redirect to={`/useredit`} />;
@@ -70,7 +78,7 @@ class UserCreate extends Component {
             <input
               className="usercreate-rectangle-21"
               type="text"
-              value={user.username}
+              value={username}
               name="username"
               required
               autoFocus
@@ -80,7 +88,9 @@ class UserCreate extends Component {
             <input
               className="usercreate-rectangle-23"
               type="text"
-              value={user.email}
+              // value={user.email}
+              value={email}
+
               name="email"
               required
               autoFocus
@@ -90,7 +100,7 @@ class UserCreate extends Component {
             <input
               className="usercreate-rectangle-24"
               type="password"
-              value={user.password}
+              value={password}
               name="password"
               required
               autoFocus
@@ -100,7 +110,7 @@ class UserCreate extends Component {
             <input
               className="usercreate-rectangle-22"
               type="password"
-              value={user.confirm}
+              value={confirm}
               name="confirm"
               required
               autoFocus
