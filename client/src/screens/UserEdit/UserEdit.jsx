@@ -209,11 +209,10 @@ class UserEdit extends Component {
             className="education-input"
           ></input>
           <p className="select-all">Select all that apply</p>
-        
+
           <div className="edit-options">
             <h2 className="subjects-label">Area of Study:</h2>
             <div className="subjects-array">
-              <h2 className="subjects-label">Area of Study:</h2>
               <button
                 className={user.area_of_study.art ? "buttonTrue" : "art-button"}
                 name="art"
@@ -282,7 +281,6 @@ class UserEdit extends Component {
 
             <h2 className="interests-label">My Interests:</h2>
             <div className="interests-array">
-              <h2 className="interests-label">My Interests:</h2>
               <button
                 className={
                   user.interests.politics ? "buttonTrue" : "poli-button"
@@ -343,7 +341,6 @@ class UserEdit extends Component {
 
             <h2 className="hobbies-label">My Hobbies:</h2>
             <div className="hobbies-array">
-              <h2 className="hobbies-label">My Hobbies:</h2>
               <button
                 className={user.hobbies.cooking ? "buttonTrue" : "cook-button"}
                 name="cooking"
@@ -398,7 +395,6 @@ class UserEdit extends Component {
 
             <h2 className="assistance-label">I could use some help with:</h2>
             <div className="assistance-array">
-              <h2 className="assistance-label">I could use some help with:</h2>
               <button
                 className={
                   user.assistance.language ? "buttonTrue" : "lang-button"
@@ -465,7 +461,6 @@ class UserEdit extends Component {
 
             <h2 className="priorities-label">My priorities are:</h2>
             <div className="priorities-array">
-              <h2 className="priorities-label">My priorities are:</h2>
               <button
                 className={
                   user.priorities.academics ? "buttonTrue" : "acad-button"
