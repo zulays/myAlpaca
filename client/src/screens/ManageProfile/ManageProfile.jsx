@@ -1,6 +1,6 @@
 import React from "react";
 import "./ManageProfile.css";
-import Header from "../../components/shared/Header/Header";
+import LogInHeader from "../../components/shared/LogInHeader/LogInHeader";
 import Footer from "../../components/shared/Footer/Footer";
 import { Link } from "react-router-dom";
 import WelcomeBanner from "../../components/shared/WelcomeBanner/WelcomeBanner";
@@ -8,7 +8,7 @@ import WelcomeBanner from "../../components/shared/WelcomeBanner/WelcomeBanner";
 const ManageProfile = () => {
   return (
     <>
-      <Header />
+      <LogInHeader />
       <WelcomeBanner />
       <div className="manageprofile-bigger">
         <h1 className="manageprofile-manage">Manage My Profile</h1>
