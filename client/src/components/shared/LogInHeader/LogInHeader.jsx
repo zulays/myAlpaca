@@ -1,5 +1,5 @@
 import React from "react"
-// import "./LogInHeader.css"
+import "./LogInHeader.css"
 import { Link } from "react-router-dom"
 
 const LogInHeader = () => {
@@ -15,21 +15,17 @@ const LogInHeader = () => {
       </div>
 
 
-      <div className="header-icon-bar">
+      <div className="header-user-bar">
         <div className="logo-set">
           <Link to="/userhome"><img src="https://res.cloudinary.com/zumariposa/image/upload/v1595435995/myalpaca/AlpacaLogo_nq6xqd.png" alt="myalpaca-logo" className="myalpaca-logo" /></Link>
           <h1 className="logo-text">myAlpaca</h1>
         </div>
 
-
-
         <div className="userprofile-logout">
           <Link to="/manageprofile"> <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595435692/IrisProfilePicIcon_cvtu2d.png" alt="profile-icon" className="userprofile-icon" /></Link>
           <br />
-          <Link to="/"> <p className="userstate-text">Log Out</p> </Link>
+          <Link to="/"> <p className="user-side-text">Log Out</p> </Link>
         </div>
-
-
       </div>
 
 
