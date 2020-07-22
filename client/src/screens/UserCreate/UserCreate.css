@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 200px;
 }
 
@@ -42,7 +42,10 @@
   background: #ffffff;
   border: 1px solid #c4c4c4;
   box-sizing: border-box;
-  padding: 20px;
+  padding-left: 34px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
 }
 
 .usercreate-rectangle-21 {
@@ -54,6 +57,8 @@
   border: 3px solid #025700;
   box-sizing: border-box;
   border-radius: 3px;
+  font-size: 18px;
+  padding: 5px;
 }
 
 .usercreate-rectangle-23 {
@@ -65,6 +70,8 @@
   border: 3px solid #025700;
   box-sizing: border-box;
   border-radius: 3px;
+  font-size: 18px;
+  padding: 5px;
 }
 
 .usercreate-rectangle-24 {
@@ -76,6 +83,8 @@
   border: 3px solid #025700;
   box-sizing: border-box;
   border-radius: 3px;
+  font-size: 18px;
+  padding: 5px;
 }
 
 .usercreate-rectangle-22 {
@@ -87,6 +96,8 @@
   border: 3px solid #025700;
   box-sizing: border-box;
   border-radius: 3px;
+  font-size: 18px;
+  padding: 5px;
 }
 
 .usercreate-rectangle-14 {
@@ -97,6 +108,9 @@
   background: #025700;
   border-radius: 20px;
   color: #fbfce6;
+  border: none;
+  padding: 5px;
+  font-size: 18px;
 }
 
 .usercreate-personal {
@@ -111,6 +125,7 @@
   line-height: 18px;
   color: #000000;
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .usercreate-username {
@@ -179,4 +194,8 @@
 
 .usercreate-register-container {
   text-align: center;
+}
+
+.usercreate-privacy {
+  font-weight: bold;
 }
