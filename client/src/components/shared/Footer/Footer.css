@@ -48,12 +48,14 @@
   display: flex;
   flex-direction: column;
   padding-top: 15px;
+  font-size: 20px;
 }
 
 .faq {
   display: flex;
   flex-direction: column;
   padding-top: 15px;
+  font-size: 20px;
 }
 
 .footer-a  {
@@ -63,9 +65,17 @@
 
 .social-images {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.find-us {
+  font-size: 22px;
+}
+
+.subs-desc {
+  font-size: 22px;
 }

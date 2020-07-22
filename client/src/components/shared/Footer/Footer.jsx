@@ -6,14 +6,14 @@ const Footer = () =>
     <div className="links">
       <div className="myalpaca">
         <p className="bold">myAlpaca</p>
-        <p>Subscribe to receive study abroad tips & news!</p>
+        <p className="subs-desc">Subscribe to receive study abroad tips & news!</p>
         <div>
           <input className="input-sub" type="email" placeholder="Email" required></input>
           <button className="button">Subscribe</button>
         </div>
       </div>
       <div className="social">
-        <p>Find Us on Social</p>
+        <p className="find-us">Find Us on Social</p>
         <div className="social-images">
           <a className="footer-a" href="https://www.facebook.com/groups/Alpacafarmlife/" title="Alpaca's Facebook" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/PbqmKif.png" alt="Facebook Icon"></img></a>
           <a className="footer-a" href="https://twitter.com/hashtag/alpacas?f=image" title="Alpaca's Twitter" target="_blank" rel="noopener noreferrer"><img src="https://i.imgur.com/Gv0vVBR.png" alt="Twitter Icon"></img></a>
