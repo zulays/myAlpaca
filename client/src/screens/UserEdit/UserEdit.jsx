@@ -181,6 +181,7 @@ class UserEdit extends Component {
             <h2>Tell us more about you...</h2>
             <p>You can always come back and add more!</p>
           </div>
+
           <div className="to-from-location">
             <label className="from-label">I am coming from:</label>
             <input
@@ -208,7 +209,9 @@ class UserEdit extends Component {
             className="education-input"
           ></input>
           <p className="select-all">Select all that apply</p>
+        
           <div className="edit-options">
+            <h2 className="subjects-label">Area of Study:</h2>
             <div className="subjects-array">
               <h2 className="subjects-label">Area of Study:</h2>
               <button
@@ -277,6 +280,7 @@ class UserEdit extends Component {
               </button>
             </div>
 
+            <h2 className="interests-label">My Interests:</h2>
             <div className="interests-array">
               <h2 className="interests-label">My Interests:</h2>
               <button
@@ -337,6 +341,7 @@ class UserEdit extends Component {
               </button>
             </div>
 
+            <h2 className="hobbies-label">My Hobbies:</h2>
             <div className="hobbies-array">
               <h2 className="hobbies-label">My Hobbies:</h2>
               <button
@@ -391,6 +396,7 @@ class UserEdit extends Component {
               </button>
             </div>
 
+            <h2 className="assistance-label">I could use some help with:</h2>
             <div className="assistance-array">
               <h2 className="assistance-label">I could use some help with:</h2>
               <button
@@ -457,6 +463,7 @@ class UserEdit extends Component {
               </button>
             </div>
 
+            <h2 className="priorities-label">My priorities are:</h2>
             <div className="priorities-array">
               <h2 className="priorities-label">My priorities are:</h2>
               <button
