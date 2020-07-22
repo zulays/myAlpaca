@@ -1,20 +1,17 @@
 .userDelete-section {
-  background-image: url(https://i.imgur.com/MxOtERl.jpg);
+  background-image: url(https://i.imgur.com/Edhrt0d.png);
   background-size: cover;
-    /* background-position: center; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* flex-direction: column; */
-  /* text-align: center; */
   height: 558px;
-    /* width: 1200px; */
-  /* opacity: 25%; */
+  font-family: Roboto;
+  font-style: normal;
+  margin-bottom: 200px;
 }
 
 .sorry-title {
   padding-top: 100px;
   font-size: 30px;
   text-align: center;
+  color: #626262;
 }
 
 .options-box {
@@ -37,7 +34,6 @@
 }
 
 .buttons-div {
-  /* margin-top: 25px; */
     margin: 0 30%;
     margin-top: 25px;
     display: flex;
@@ -47,6 +43,8 @@
 .tell-us {
   text-align: center;
   padding-top: 20px;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 .cancel-button {
@@ -66,6 +64,11 @@
 color: #FBFCE6;
 }
 
+.cancel-link {
+  text-decoration: none;
+  color: #FBFCE6;
+}
+
 .delete-button {
   width: 180px;
   height: 50px;
@@ -82,6 +85,13 @@ color: #FBFCE6;
   color: #FBFCE6;
 } 
 
+
+.checkbox-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 25%;
+}
 
 
 
