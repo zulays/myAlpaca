@@ -3,164 +3,13 @@ import "./UserEdit.css";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
 import { Redirect } from "react-router-dom";
-import { getUser, updateUser } from "../../services/users";
 
 // grab local state inside the component. keep state higher up. that's why we put usercreate/useredit in app.js. move the state of usereidt up
 
 class UserEdit extends Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   user: {
-    //     from_location: "",
-    //     to_location: "",
-    //     education: "",
-    //     area_of_study: {
-    //       art: false,
-    //       science: false,
-    //       math: false,
-    //       literature: false,
-    //       liberal_arts: false,
-    //       healthcare: false,
-    //     },
-    //     interests: {
-    //       politics: false,
-    //       space: false,
-    //       social_media: false,
-    //       music: false,
-    //       sports: false,
-    //       pop_culture: false,
-    //     },
-    //     hobbies: {
-    //       cooking: false,
-    //       jogging: false,
-    //       bar_hopping: false,
-    //       dance: false,
-    //       movies: false,
-    //       hiking: false,
-    //     },
-    //     assistance: {
-    //       language: false,
-    //       housing: false,
-    //       currency: false,
-    //       visa: false,
-    //       local_connections: false,
-    //       maps: false,
-    //     },
-    //     priorities: {
-    //       academics: false,
-    //       culture: false,
-    //       shopping: false,
-    //       sightseeing: false,
-    //       spiritually: false,
-    //       staying_in_touch: false,
-    //     },
-    //     //initialize all values as false first
-    //     //Object.entries with allow use of array to match schema, brings in key, value pair and allows use of access to it
-    //     //consider how data with go to BE -- convert values into an
-    //     //consider how data will be entered in FE
-    //     //how to link the 2 together
-    //   },
-    //   updated: false,
-    //   button: false,
-    // };
   }
-
-  // handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   this.setState({
-  //     user: {
-  //       ...this.state.user,
-  //       [name]: value,
-  //     },
-  //   });
-  // };
-
-  // handleEdit = async (e) => {
-  //   e.preventDefault();
-  //   let id = this.props.user._id;
-  //   console.log(this.props.user);
-  //   const updated = await updateUser(id, this.state.user);
-  //   this.setState({
-  //     updated: true,
-  //   });
-  // };
-
-  // handleSelect = (e) => {
-  //   const { name } = e.target;
-  //   console.log(e.target.dataset);
-  //   const { category } = e.target.dataset;
-  //   this.setState((prevState) => ({
-  //     user: {
-  //       ...prevState.user,
-  //       [category]: {
-  //         ...prevState.user[category],
-  //         [name]: !prevState.user[category][name],
-  //       },
-  //     },
-  //   }));
-  // };
-
-  // componentDidMount = async () => {
-  //   //update current user with existing parameters
-  //   //update state from existing changes
-  //   // const userEdit = this.props.user._id
-  //   // const user = await getUser(userEdit)
-  //   const { user } = this.props;
-  //   // console.log(user)
-
-  // if (user.area_of_study) {
-  //   this.setState({
-  //     user: {
-  //       from_location: user.from_location,
-  //       to_location: user.to_location,
-  //       education: user.education,
-  //       area_of_study: {
-  //         art: user.area_of_study.art,
-  //         science: user.area_of_study.science,
-  //         math: user.area_of_study.math,
-  //         literature: user.area_of_study.literature,
-  //         liberal_arts: user.area_of_study.liberal_arts,
-  //         healthcare: user.area_of_study.healthcare,
-  //       },
-  //       interests: {
-  //         politics: user.interests.politics,
-  //         space: user.interests.space,
-  //         social_media: user.interests.social_media,
-  //         music: user.interests.music,
-  //         sports: user.interests.sports,
-  //         pop_culture: user.interests.pop_culture,
-  //       },
-  //       hobbies: {
-  //         cooking: user.hobbies.cooking,
-  //         jogging: user.hobbies.jogging,
-  //         bar_hopping: user.hobbies.bar_hopping,
-  //         dance: user.hobbies.dance,
-  //         movies: user.hobbies.movies,
-  //         hiking: user.hobbies.hiking,
-  //       },
-  //       assistance: {
-  //         language: user.assistance.language,
-  //         housing: user.assistance.housing,
-  //         currency: user.assistance.currency,
-  //         visa: user.assistance.visa,
-  //         local_connections: user.assistance.local_connections,
-  //         maps: user.assistance.maps,
-  //       },
-  //       priorities: {
-  //         academics: user.priorities.academics,
-  //         culture: user.priorities.culture,
-  //         shopping: user.priorities.shopping,
-  //         sightseeing: user.priorities.sightseeing,
-  //         spiritually: user.priorities.spiritually,
-  //         staying_in_touch: user.priorities.staying_in_touch,
-  //       },
-  //     },
-
-  //       updated: false,
-  //     });
-  //   }
-  // };
 
   render() {
     const {
@@ -170,6 +19,7 @@ class UserEdit extends Component {
       handleSelect,
       handleEdit,
     } = this.props;
+
     if (updated) {
       // return <Redirect to={`/userhome`} />;
     }
