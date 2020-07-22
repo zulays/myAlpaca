@@ -32,33 +32,39 @@ class UserEdit extends Component {
             <p>You can always come back and add more!</p>
           </div>
 
-          <div className="to-from-location">
-            <label className="from-label">I am coming from:</label>
-            <input
-              type="text"
-              name="from_location"
-              onChange={handleChange}
-              value={user.from_location}
-              className="from-input"
-            ></input>
-            <label className="to-label">I am going to: </label>
-            <input
-              type="text"
-              name="to_location"
-              onChange={handleChange}
-              value={user.to_location}
-              className="to-input"
-            ></input>
+          <div className="input-options">
+            <div className="to-from-location">
+              <label className="from-label">I am coming from:</label>
+              <input
+                type="text"
+                name="from_location"
+                onChange={handleChange}
+                value={user.from_location}
+                className="from-input"
+              ></input>
+              <label className="to-label">I am going to: </label>
+              <input
+                type="text"
+                name="to_location"
+                onChange={handleChange}
+                value={user.to_location}
+                className="to-input"
+              ></input>
+            </div>
+            <div className="education">
+              <label className="edu-label">My Academic Instituion:</label>{" "}
+              <input
+                type="text"
+                name="education"
+                onChange={handleChange}
+                value={user.education}
+                className="education-input"
+              ></input>
+            </div>
+            <p className="select-all">Select all that apply</p>
           </div>
-          <label className="education">My Academic Instituion:</label>{" "}
-          <input
-            type="text"
-            name="education"
-            onChange={handleChange}
-            value={user.education}
-            className="education-input"
-          ></input>
-          <p className="select-all">Select all that apply</p>
+
+
 
           <div className="edit-options">
             <h2 className="subjects-label">Area of Study:</h2>
