@@ -1,7 +1,9 @@
 .activities-chart{
   display: flex;
-  justify-content: space-between;
-  margin: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 118px;
+  margin-bottom: 188px;
 }
 
 .rows{
