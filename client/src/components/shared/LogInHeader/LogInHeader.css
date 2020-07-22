@@ -1,11 +1,12 @@
-header{
-  /* flex: 1; */
+/* .header-logout{
+  flex: 1;
   width: 100%;
   height: 200px;
   text-align: center;
 }
 
 h3{
+  /* offsets default browser styling */
   margin: 0;
 }
 
@@ -16,24 +17,23 @@ h3{
   align-items: center;
   width: 100%;
   height: 39px;
-  left: 0px;
-  top: 0px;
   background-color: #FF835C;
   color: #000000;
 }
 
 .ticker-tape-text{
+  text-align: center;
   height: 13px;
-  left: 0;
-  top: 0;
   font-family: "Roboto";
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 20px;
+  line-height: 20px;
   color: #000000;
 }
 
 .exit-banner{
-  margin-right: 5px;
+  margin-right: 20px;
+  font-size: 20px;
+  line-height: 20px;
 }
 
 .header-icon-bar{
@@ -41,18 +41,10 @@ h3{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px;
+  margin: 10px auto;
   height: 65px;
 }
 
-.logo-set{
-  margin-left: 20px;
-  text-align: left;
-}
-
-.myalpaca-logo{
-  height: 65px;
-}
 
 .logo-text{
   display: inline;
@@ -60,13 +52,9 @@ h3{
   color: #025700;
   font-size: 22px;
   line-height: 26px;
-  padding: 5px; 
 }
 
-.profile-icon{
-  margin-right: 20px;
-  height: 100px;
-}
+
 
 .header-nav-bar{
   display: flex;
@@ -82,16 +70,23 @@ h3{
   line-height: 30px;
   color: #FBFCE6;
   
+} */
+
+.userprofile-logout{
+  margin-right: 20px;
+  margin-top: 10px;
+  height: 70px;
 }
 
-.logout-text{
-  display: inline;
-  margin-right: 6px; 
-  /* z-index: 1; */
+.userprofile-icon{
+  height: 45px;
 }
 
-.login-nav-text{
-  color: #FBFCE6;
-  text-decoration: none; 
+.userstate-text{
+  color: #025700;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin: 0;
 }
-
