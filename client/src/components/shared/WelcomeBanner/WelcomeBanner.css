@@ -120,3 +120,19 @@
   text-align: center;
   color: #231f20;
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .welcomebanner-biggest {
+    flex-direction: column;
+    margin-left: 19px;
+    margin-top: 20px;
+  }
+
+  .welcomebanner-container {
+    margin-left: 50px;
+  }
+
+  .welcomebanner-frame14 {
+    margin-top: 20px;
+  }
+}
