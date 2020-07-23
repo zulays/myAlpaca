@@ -65,3 +65,13 @@ background-size: cover;
 background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https://res.cloudinary.com/zumariposa/image/upload/v1595364803/myalpaca/ShoppingTile_sdwcz8.png);
 background-size: cover;
 }
+
+
+/* ----------------------- Media Queries  - Tablet -----------------------  */
+@media only screen and (min-width: 768px) and (max-width: 1024px){}
+
+
+
+
+/* ----------------------- Media Queries  - Laptop + Up  -----------------------  */
+@media only screen and (min-width: 1025px) and (max-width: 1280px){}
