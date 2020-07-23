@@ -154,9 +154,9 @@ h3{
   }
 
   .header-nav-bar{
-    font-size: 12px;
+    font-size: 14px;
     padding: 6px;
-    height: 20px;
+    height: 30px;
   }
 
   .nav-text{
@@ -202,5 +202,24 @@ h3{
   
   .nouser-side-text{
     margin-bottom: 9%;
+  }
+
+   
+  .header-nav-bar{
+    font-size: 18px;
+    padding: 6px;
+    height: 30px;
+  }
+
+}
+
+/* ----------------------- Media Queries  - Tablet -----------------------  */
+@media only screen and (min-width: 1025px) and (max-width: 1920px){
+
+
+  .header-nav-bar{
+    font-size: 22px;
+    padding: 6px;
+    height: 40px;
   }
 }
