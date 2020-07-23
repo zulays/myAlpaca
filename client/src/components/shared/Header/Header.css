@@ -37,7 +37,6 @@ h3{
   height: 10px;
   left: 96%;
   top: 14.63px;
-  font-size: 20px;
   line-height: 20px;
 }
 
@@ -65,6 +64,26 @@ h3{
   border-bottom: 0;
 }
 
+.userprofile-signup{
+  margin-right: 52px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.userprofile-signup a{
+  text-decoration: none;
+}
+
+.nouser-side-text{
+  color: #025700;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
 .header-nav-bar{
   display: flex;
   align-items: center;
@@ -86,22 +105,102 @@ h3{
   padding: 20px;
 }
 
-.userprofile-signup{
-  margin-right: 62px;
-  margin-top: 10px;
-  text-align: center;
+
+
+/* ----------------------- Media Queries  - Mobile -----------------------  */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .header{
+    height: 150px;
+  }
+ 
+  .ticker-tape-text{
+    height: 100%;
+    font-size: 14px;
+    overflow-wrap: break-word;
+    word-wrap: break-all;
+    width: 90%;
+  }
+  
+  .exit-banner{
+    top: 10px;
+  }
+  
+  .header-icon-bar{
+    margin-top: 6px;
+    margin-left: 31px;
+    height: 60px;
+  }
+  
+  .myalpaca-logo{
+    margin-bottom: 5%;
+    height: 50px;
+  }
+  
+  .logo-text{
+  display: none;
+  }
+
+  .userprofile-signup{
+    margin-right: 32px;
+  }
+
+  .nouser-profile-icon{
+    height: 40px;
+    margin-bottom: 5%;
+  }
+  
+  .nouser-side-text{
+    display: none;
+  }
+
+  .header-nav-bar{
+    font-size: 12px;
+    padding: 6px;
+    height: 20px;
+  }
+
+  .nav-text{
+    padding: 10px;
+  }
 }
 
-.userprofile-signup a{
-  text-decoration: none;
-}
+/* ----------------------- Media Queries  - Tablet -----------------------  */
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .header{
+    height: 150px;
+  }
+ 
+.ticker-tape{
+    height: 100%;
+    font-size: 14px;
+    overflow-wrap: break-word;
+    word-wrap: break-all;
+    width: 100%;
+  } 
+  
+.exit-banner{
+    top: 25px;
+    height: 12px;
+  }
+  
+  .header-icon-bar{
+    margin-left: 31px;
+  }
+  
+  .myalpaca-logo{
+    margin-bottom: -5%;
+  }
+  
+  .userprofile-signup{
+    margin-right: 42px;
+  }
 
-.nouser-side-text{
-  color: #025700;
-  text-decoration: none;
-  text-align: center;
-  font-weight: 700;
-  font-size: 20px;
-  margin-top: 0;
-  margin-bottom: 5px;
+  .nouser-profile-icon{
+    height: 40px;
+    margin-bottom: 0;
+  } 
+  
+  .nouser-side-text{
+    margin-bottom: 9%;
+  }
 }

@@ -17,7 +17,7 @@ const LogInPage = () => {
           <label className="inputs-label">Password</label>
           <input type="password" className="inputs" />
           <label className="forgot-pass">Forgot password?</label>
-          <label className="checkbox-inline"><input type="checkbox" value="" className="rem-checkbox" />Remember Me</label>
+          <label className="checkbox-inline"><input type="checkbox" value="" className="rem-checkbox" />Remember me</label>
           <button className="loginpage-button">Log In</button>
         </form>
       </main>
