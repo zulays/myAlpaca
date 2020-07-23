@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./UserEdit.css";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
-// import { Redirect } from "react-router-dom";
 
 
 class UserEdit extends Component {
@@ -19,9 +18,7 @@ class UserEdit extends Component {
       handleEdit,
     } = this.props;
 
-    // if (updated) {
-    //   // return <Redirect to={`/userhome`} />;
-    // }
+
     return (
       <>
         <Header />
