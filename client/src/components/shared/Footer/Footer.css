@@ -1,5 +1,5 @@
 .footer {
-  background: #FBFCE6;
+  background: #fbfce6;
   padding-bottom: 12%;
   font-family: Roboto;
   color: #626262;
@@ -19,12 +19,12 @@
   margin: 0 0px;
   width: 243px;
   height: 25px;
-  border: 1px solid #FBFCE6;
+  border: 1px solid #fbfce6;
   border-bottom: 2px solid #626262;
   box-sizing: border-box;
   border-radius: 3px;
   margin: 10px;
-  background: #FBFCE6;
+  background: #fbfce6;
 }
 
 .button {
@@ -44,7 +44,7 @@
   color: #626262;
 }
 
-.term-use{
+.term-use {
   display: flex;
   flex-direction: column;
   padding-top: 15px;
@@ -58,7 +58,7 @@
   font-size: 20px;
 }
 
-.footer-a  {
+.footer-a {
   text-decoration: none;
   color: #626262;
 }
@@ -70,6 +70,7 @@
 
 .bold {
   font-weight: bold;
+  font-size: 22px;
 }
 
 .find-us {
@@ -79,3 +80,27 @@
 .subs-desc {
   font-size: 22px;
 }
+
+ @media (max-width: 375px){
+  .bold {
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: 22px;
+  }
+  .subs-desc {
+    margin-left: 5%;
+    font-size: 22px;
+  }
+  .input-sub {
+    width: 182px;
+  }
+  .button {
+    width: 122px;
+  }
+  .myalpaca {
+    margin-bottom: 5%;
+  }
+  .faq {
+    margin-top: 5%;
+  }
+} 

@@ -14,18 +14,31 @@
   color: #626262;
 }
 
+.userdelete-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 .options-box {
-    background: white;
-    margin: 0 30%;
-    border-radius: 3%;
-    height: 215px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 332px;
+  height: 179px;
+  left: 467px;
+  top: 501px;
+  background: #ffffff;
+  border-radius: 8px;
 }
 
 .checkbox {
   display: inline-block;
   width: 1.25em;
   height: 1.25em;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
   background: #ffffff;
   box-sizing: border-box;
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -34,17 +47,24 @@
 }
 
 .buttons-div {
-    margin: 0 30%;
-    margin-top: 25px;
-    display: flex;
-    justify-content: space-between;
+  margin: 0 30%;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .tell-us {
   text-align: center;
-  padding-top: 20px;
-  font-size: 23px;
+  width: 322px;
+  height: 30px;
+  left: 472px;
+  top: 518px;
+  font-family: Roboto;
+  font-style: normal;
   font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
 }
 
 .cancel-button {
@@ -52,29 +72,7 @@
   height: 50px;
   left: 642px;
   top: 715px;
-  background: #638D62;
-  border-radius: 5px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 24px; 
-  line-height: 28px;
-  text-align: center;
-
-color: #FBFCE6;
-}
-
-.cancel-link {
-  text-decoration: none;
-  color: #FBFCE6;
-}
-
-.delete-button {
-  width: 180px;
-  height: 50px;
-  left: 443px;
-  top: 715px;
-  background: #FFBE5C;
+  background: #638d62;
   border-radius: 5px;
   font-family: Roboto;
   font-style: normal;
@@ -82,22 +80,68 @@ color: #FBFCE6;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
-  color: #FBFCE6;
-} 
+  color: #fbfce6;
+  border: none;
+}
 
+.cancel-link {
+  text-decoration: none;
+  color: #fbfce6;
+}
+
+.delete-button {
+  width: 180px;
+  height: 50px;
+  left: 443px;
+  top: 715px;
+  background: #ffbe5c;
+  border-radius: 5px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #fbfce6;
+  border: none;
+}
 
 .checkbox-div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 25%;
+  width: 246px;
+  height: 25px;
+  left: 538px;
+  top: 563px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
 }
 
+@media (max-width: 375px){
+  
+  .userDelete-section {
+    padding-bottom: 9%;
+    background-image: url(https://i.imgur.com/Yvf829B.png);
+  }
+  .buttons-div {
+    margin-left: 25%;
+    flex-flow: column wrap;
+  }
+  .delete-button {
+    margin-bottom: 10%;
+  }
 
+  .checkbox-div {
+    margin: 0 7%;
+  }
 
-    
-
-
-
-
+  .options-box {
+    margin: 0 6%;
+  }
+} 
 
