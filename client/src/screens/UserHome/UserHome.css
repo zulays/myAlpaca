@@ -66,6 +66,27 @@ background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5) ), url(https
 background-size: cover;
 }
 
+/* ----------------------- Media Queries  -  Mobile -----------------------  */
+@media only screen and (min-width: 320px) and (max-width: 767px){
+
+  /* .rows{
+    padding: 20px;
+  }
+  
+  td{
+    font-family: "Roboto";
+    border: 20px solid #ffffff;
+    width: 230px;
+    height: 130px;
+    padding: 0.5rem;
+    text-align: left;
+    vertical-align: bottom;
+    font-size: 30px;
+    line-height: 40px;
+  } */
+
+}
+
 
 /* ----------------------- Media Queries  - Tablet -----------------------  */
 @media only screen and (min-width: 768px) and (max-width: 1024px){}
