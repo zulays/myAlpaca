@@ -144,3 +144,9 @@
   color: #434041;
   margin-top: 20px;
 }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .home-container {
+    margin-left: 600px;
+  }
+}
