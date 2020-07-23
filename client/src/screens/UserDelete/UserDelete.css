@@ -93,6 +93,27 @@ color: #FBFCE6;
   margin: 0 25%;
 }
 
+@media (max-width: 375px){
+  
+  .userDelete-section {
+    padding-bottom: 9%;
+  }
+  .buttons-div {
+    margin-left: 25%;
+    flex-flow: column wrap;
+  }
+  .delete-button {
+    margin-bottom: 10%;
+  }
+
+  .checkbox-div {
+    margin: 0 7%;
+  }
+
+  .options-box {
+    margin: 0 6%;
+  }
+} 
 
 
     
