@@ -70,6 +70,7 @@
 
 .bold {
   font-weight: bold;
+  font-size: 22px;
 }
 
 .find-us {
@@ -79,3 +80,30 @@
 .subs-desc {
   font-size: 22px;
 }
+
+
+
+
+ @media (max-width: 375px){
+  .bold {
+    font-weight: bold;
+    margin-left: 5%;
+    font-size: 22px;
+  }
+  .subs-desc {
+    margin-left: 5%;
+    font-size: 22px;
+  }
+  .input-sub {
+    width: 182px;
+  }
+  .button {
+    width: 122px;
+  }
+  .myalpaca {
+    margin-bottom: 5%;
+  }
+  .faq {
+    margin-top: 5%;
+  }
+} 
