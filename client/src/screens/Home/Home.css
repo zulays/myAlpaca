@@ -1,0 +1,146 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.home-picture {
+  background-image: url("https://i.imgur.com/3sLB5zh.png");
+  width: 833.33px;
+  height: 500px;
+  left: 0px;
+  margin-top: 40px;
+}
+
+.home-hi {
+  width: 248px;
+  height: 75px;
+  left: 476px;
+  top: 750px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+  color: #ffbe5c;
+  margin-bottom: 0;
+}
+
+.home-container3 {
+  width: 579px;
+  height: 301px;
+  left: 346px;
+  top: 840px;
+}
+
+.home-w {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 65px;
+  color: #626262;
+}
+
+.home-one-sentence {
+  line-height: 0.85;
+}
+
+.home-paragraphs {
+  font-family: Roboto;
+  font-style: normal;
+  color: #626262;
+  font-size: 24px;
+  line-height: normal;
+}
+
+.home-europe {
+  background-image: url("https://i.imgur.com/mFl0Qox.png");
+  width: 299px;
+  height: 186px;
+  left: 110px;
+  top: 1271px;
+  background-size: cover;
+}
+
+.home-countries {
+  display: flex;
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+.home-americas {
+  background-image: url("https://i.imgur.com/suw6MLv.png");
+  width: 299px;
+  height: 186px;
+  left: 351px;
+  top: 1271px;
+  background-size: cover;
+}
+
+.home-asia {
+  background-image: url("https://i.imgur.com/88B5INj.png");
+  width: 299px;
+  height: 186px;
+  left: 589px;
+  top: 1271px;
+  background-size: cover;
+}
+
+.home-africa {
+  background-image: url("https://i.imgur.com/qRoxHm3.png");
+  width: 299px;
+  height: 186px;
+  left: 831px;
+  top: 1271px;
+}
+
+.home-lejia {
+  width: 524px;
+  height: 60px;
+  left: 345px;
+  top: 1583px;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #434041;
+  margin-bottom: 35px;
+}
+
+.home-name1 {
+  margin-top: 0;
+  margin-left: 395px;
+}
+
+.home-sentence1 {
+  margin-bottom: 0;
+  font-size: 26px;
+}
+
+.home-name2 {
+  margin-top: 0;
+  margin-left: 600px;
+}
+
+.home-sentence2 {
+  margin-bottom: 0;
+}
+
+.home-rosemary {
+  width: 831px;
+  height: 60px;
+  left: 217px;
+  top: 1702px;
+  font-family: Roboto;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #434041;
+  margin-top: 20px;
+}

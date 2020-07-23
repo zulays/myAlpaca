@@ -1,47 +1,26 @@
 import React, { Component } from "react";
 import "./UserCreate.css";
 import { Redirect } from "react-router-dom";
-import { createUser } from "../../services/users";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
-import { Link } from "react-router-dom";
 
 class UserCreate extends Component {
-  constructor() {
-    super();
-    this.state = {
-      user: {
-        username: "",
-        email: "",
-        password: "",
-        confirm: "",
-      },
-      created: false,
-    };
+  constructor(props) {
+    super(props);
   }
 
-  handleChange = (event) => {
-    const { name, value } = event.target;
-    this.setState({
-      user: {
-        ...this.state.user,
-        [name]: value,
-      },
-    });
-  };
-
-  handleSubmit = async (event) => {
-    event.preventDefault();
-    if (this.state.user.password === this.state.user.confirm) {
-      const created = await createUser(this.state.user);
-      this.setState({ created });
-    }
-  };
-
   render() {
-    const { user, created } = this.state;
-
+    const {
+      username,
+      password,
+      email,
+      confirm,
+      created,
+      handleChange,
+      handleSubmit,
+    } = this.props;
     if (created) {
+      console.log(created);
       return <Redirect to={`/useredit`} />;
     }
     return (
@@ -54,61 +33,60 @@ class UserCreate extends Component {
             and favorite any content
           </p>
 
-          <form className="usercreate-form" onSubmit={this.handleSubmit}>
-            <p className="username">Username *</p>
+          <form className="usercreate-form" onSubmit={handleSubmit}>
+            <p className="usercreate-username">Username *</p>
             <input
               className="usercreate-rectangle-21"
               type="text"
-              value={user.username}
+              value={username}
               name="username"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-email"> Email Address *</p>
             <input
               className="usercreate-rectangle-23"
               type="text"
-              value={user.email}
+              value={email}
               name="email"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-password">Password *</p>
             <input
               className="usercreate-rectangle-24"
               type="password"
-              value={user.password}
+              value={password}
               name="password"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-confirm">Confirm Password *</p>
             <input
               className="usercreate-rectangle-22"
               type="password"
-              value={user.confirm}
+              value={confirm}
               name="confirm"
               required
               autoFocus
-              onChange={this.handleChange}
+              onChange={handleChange}
             />
             <p className="usercreate-personal">
               Your personal data will be used to support your experience
               throughout using this website and to manage access to your
-              account.Please see our <span>privacy policy</span> if you have any
-              questions.
+              account.Please see our{" "}
+              <span className="usercreate-privacy">privacy policy</span> if you
+              have any questions.
             </p>
             <div className="usercreate-register-container">
-              <Link to={"/useredit"} className="usercreate-link">
-                <input
-                  className="usercreate-rectangle-14"
-                  type="submit"
-                  value="Register"
-                />
-              </Link>
+              <input
+                className="usercreate-rectangle-14"
+                type="submit"
+                value="Register"
+              />
             </div>
           </form>
         </div>

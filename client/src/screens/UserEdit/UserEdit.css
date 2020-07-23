@@ -1,41 +1,53 @@
-/* .editPage-main{
+.editPage-main{
   display: flex;
-  /* justify-content: center;
+  flex-direction: column;
   align-items: center;
-} */
-
-.edit-title{
-
+  margin-bottom: 100px;
+  margin-top: 45px
 }
 
-.to-from-location{
+.edit-title{
+  text-align: center;
+}
 
+.input-options{
+  margin: 0 auto;
+  width: 700px;
+}
+
+.from-label,
+.to-label,
+.edu-label{
+text-align: left;
+margin-left: 5px;
 }
 
 .from-input,
 .to-input,
 .education-input{
-font-size: 22px;
-
+  font-size: 20px;
+  margin: 5px;  
+  width: 200px;
 }
 
-/* .from-label,
-.to-label, */
 .education{
-  justify-self: left;
-text-align: left;
-display: inline;
+  float: left;
 }
 
+.education-input{
+  width: 480px;
+  margin-bottom: 30px;
+}
 
 .select-all{
+  margin-left: 60px;
   font-style: italic;
   font-size:16px;
   line-height:19px;
 }
 
 .edit-options{
-padding: 40px;
+  padding: 40px;
 }
 
 .subjects-array,
@@ -43,7 +55,10 @@ padding: 40px;
 .hobbies-array,
 .assistance-array,
 .priorities-array{
-
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start ;
 }
 
 .subjects-label,
@@ -51,9 +66,9 @@ padding: 40px;
 .hobbies-label,
 .assistance-label,
 .priorities-label{
-font-weight: 400;
-font-size: 22px;
-line-height:26px;
+  font-weight: 400;
+  font-size: 22px;
+  line-height:26px;
 }
 
 .art-button,
@@ -62,52 +77,104 @@ line-height:26px;
 .lit-button,
 .la-button,
 .health-button{
+  text-align: center;
+  width: 10rem;
+  height: 120px;
   margin: 15px;
-  padding: 40px;
+  padding: 0.5rem;
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
 }
 
-.buttonFalse{
-  margin: 15px;
-  padding: 40px;
-  font-size: 20px;
-  line-height: 26px;
-  font-weight: 600;
-}
 
 .buttonTrue{
   border: 3px solid #FFBE5C;
   background-color: #FBFCE6;
   color: #025700;
+  text-align: center;
+  width: 10rem;
+  height: 120px;
   margin: 15px;
-  padding: 40px;
+  padding: 0.5rem;
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
 }
 
-
-.int-button,
-.hob-button,
-.ast-button,
-.pri-button{
+.poli-button,
+.space-button,
+.socmed-button,
+.music-button,
+.sports-button,
+.popcul-button{
+  text-align: center;
+  width: 10rem;
+  height: 120px;
   margin: 15px;
-  padding: 40px;
+  padding: 0.5rem;
   font-size: 20px;
   line-height: 26px;
   font-weight: 600;
 }
 
+.cook-button,
+.jog-button,
+.barhop-button,
+.dance-button,
+.mov-button,
+.hike-button{
+  text-align: center;
+  width: 10rem;
+  height: 120px;
+  margin: 15px;
+  padding: 0.5rem;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
 
+.lang-button,
+.house-button,
+.curr-button,
+.visa-button,
+.localcon-button,
+.maps-button{
+  text-align: center;
+  width: 10rem;
+  height: 120px;
+  margin: 15px;
+  padding: 0.5rem;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
+
+.acad-button,
+.cul-button,
+.shop-button,
+.sightsee-button,
+.spirit-button,
+.staytouch-button{
+  text-align: center;
+  width: 10rem;
+  height: 120px;
+  margin: 15px;
+  padding: 0.5rem;
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: 600;
+}
 
 .doneProfile-button{
-  font-size: 18px;
-  height: 33px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
   background-color: #025800;
   color: #FBFCE6;
   padding: 2px 20px;
   border-radius: 20px;
   border-style: none;
+  width: 167px;
+  height: 43px;
 }

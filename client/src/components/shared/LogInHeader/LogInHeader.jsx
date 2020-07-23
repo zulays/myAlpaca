@@ -1,45 +1,40 @@
 import React from "react"
 import "./LogInHeader.css"
+import { Link } from "react-router-dom"
 
 const LogInHeader = () => {
 
+
+
   return (
 
-    <header>
-
+    <header className="header" >
       <div className="ticker-tape">
         <p className="ticker-tape-text">Click Here to Learn More about COVID-19 Travel Advisories</p>
-        <p className="exit-banner">x</p>
+        <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595437166/myalpaca/Close_button_ystvyf.png" alt="close banner" className="exit-banner" />
       </div>
 
-      <div className="header-icon-bar">
+
+      <div className="header-user-bar">
         <div className="logo-set">
-          <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595282898/alpaca-logo_igwnih.png" alt="myalpaca-logo" className="myalpaca-logo" />
+          <Link to="/userhome"><img src="https://res.cloudinary.com/zumariposa/image/upload/v1595435995/myalpaca/AlpacaLogo_nq6xqd.png" alt="myalpaca-logo" className="myalpaca-logo" /></Link>
           <h1 className="logo-text">myAlpaca</h1>
         </div>
-        <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595284487/Untitled_Artwork_4_g7su9q.png" alt="profile-icon" className="profile-icon" />
-      </div>
 
-      <div className="header-nav-bar">
-        <h3 className="login-nav-text">About</h3>
-        <h3 className="login-nav-text">Reviews</h3>
-        <h3 className="login-nav-text">Contact</h3>
-        <h3 className="login-nav-text">FAQ</h3>
-        <div className="logout-text">
-          <h3 className="login-nav-text">Log Out</h3>
+        <div className="userprofile-logout">
+          <Link to="/manageprofile"> <img src="https://res.cloudinary.com/zumariposa/image/upload/v1595435692/IrisProfilePicIcon_cvtu2d.png" alt="profile-icon" className="userprofile-icon" /></Link>
+          <br />
+          <Link to="/"> <p className="user-side-text">Log Out</p> </Link>
         </div>
       </div>
 
 
-      {/* 
-      <ul className="nav-bar">
-        <li>About</li>
-        <li>Reviews</li>
-        <li>Contact</li>
-        <li>FAQ</li>
-        <li className="side-text">Log Out</li>
-      </ul> */}
-
+      <div className="header-nav-bar">
+        <h3 className="nav-text">About</h3>
+        <h3 className="nav-text">Reviews</h3>
+        <h3 className="nav-text">Contact</h3>
+        <h3 className="nav-text">FAQ</h3>
+      </div>
     </header>
   )
 }

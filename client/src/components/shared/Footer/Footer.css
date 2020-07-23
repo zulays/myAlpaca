@@ -1,7 +1,6 @@
 .footer {
   background: #FBFCE6;
   padding-bottom: 12%;
-  /* padding: 0 5%; */
   font-family: Roboto;
   color: #626262;
 }
@@ -41,7 +40,6 @@
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
-  /* line-height: 18px; */
   text-align: center;
   color: #626262;
 }
@@ -50,14 +48,34 @@
   display: flex;
   flex-direction: column;
   padding-top: 15px;
+  font-size: 20px;
 }
 
 .faq {
   display: flex;
   flex-direction: column;
   padding-top: 15px;
+  font-size: 20px;
 }
 
-a {
+.footer-a  {
   text-decoration: none;
+  color: #626262;
+}
+
+.social-images {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.find-us {
+  font-size: 22px;
+}
+
+.subs-desc {
+  font-size: 22px;
 }
