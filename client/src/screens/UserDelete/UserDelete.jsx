@@ -21,6 +21,8 @@ class UserDelete extends Component {
         <WelcomeBanner />
         <div className="userDelete-section">
           <p className="sorry-title">We are sorry to see you go...</p>
+
+          <div className="userdelete-container">
           <div className="options-box">
             <p className="tell-us">Tell us why so we can get better</p>
             <div className="checkbox-div">
@@ -56,7 +58,8 @@ class UserDelete extends Component {
                 </label>
               </div>
             </div>
-          </div>
+            </div>
+            </div>
           <div className="buttons-div">
             <button className="delete-button" onClick={this.handleDelete}>
               Delete Profile
