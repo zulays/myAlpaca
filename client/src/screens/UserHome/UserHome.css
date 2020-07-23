@@ -1,28 +1,58 @@
+*{
+  box-sizing: border-box;
+}
+
 .activities-chart{
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   margin-top: 118px;
   margin-bottom: 188px;
+  width: 100%;
 }
 
-.rows{
-  padding: 20px;
-}
-
-td{
-  font-family: "Roboto";
-  border: 20px solid #ffffff;
+.local-events,
+.weather,
+.restaurants,
+.currency,
+.transportation,
+.languages,
+.culture,
+.shopping{
+  float: left;
   width: 430px;
   height: 230px;
+  padding: 20px;
+  font-family: "Roboto";
+  border: 20px solid #ffffff;
   padding: 0.5rem;
   text-align: left;
   vertical-align: bottom;
-  font-size: 40px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.image-text {
+  font-size: 48px;
   line-height: 56px;
   font-weight: 600;
   color: #ffffff;
 }
+
+
+/* .image-text h1{
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: 600;
+  color: #ffffff;
+  vertical-align: bottom;
+} */
+
 
 
 .local-events{
@@ -70,30 +100,26 @@ background-size: cover;
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
   .activities-chart{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 118px;
-    margin-bottom: 188px;
+    /* text-align: center; */
   }
   
-  .rows{
-    padding: 20px;
-  }
-  
-  td{
-    font-family: "Roboto";
-    border: 20px solid #ffffff;
+  .local-events,
+  .weather,
+  .restaurants,
+  .currency,
+  .transportation,
+  .languages,
+  .culture,
+  .shopping{
+    float: left;
     width: 430px;
     height: 230px;
+    padding: 20px;
+    font-family: "Roboto";
+    border: 20px solid #ffffff;
     padding: 0.5rem;
     text-align: left;
     vertical-align: bottom;
-    font-size: 40px;
-    line-height: 56px;
-    font-weight: 600;
-    color: #ffffff;
   }
 
 }
