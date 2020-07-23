@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./UserCreate.css";
 import { Redirect } from "react-router-dom";
-import { createUser } from "../../services/users";
 import Header from "../../components/shared/Header/Header";
 import Footer from "../../components/shared/Footer/Footer";
 
