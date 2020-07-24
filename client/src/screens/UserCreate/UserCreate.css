@@ -140,7 +140,7 @@
   line-height: 21px;
   text-align: center;
   color: #000000;
-  padding-right: 150px;
+  padding-right: 0px;
 }
 
 .usercreate-email {
@@ -155,7 +155,7 @@
   line-height: 21px;
   text-align: center;
   color: #000000;
-  padding-right: 114px;
+  padding-right: 0px;
 }
 
 .usercreate-password {
@@ -170,7 +170,7 @@
   line-height: 21px;
   text-align: center;
   color: #000000;
-  padding-right: 150px;
+  padding-right: 0px;
 }
 
 .usercreate-confirm {
@@ -185,7 +185,7 @@
   line-height: 21px;
   text-align: center;
   color: #000000;
-  padding-right: 82px;
+  padding-right: 0px;
 }
 
 .usercreate-link {
