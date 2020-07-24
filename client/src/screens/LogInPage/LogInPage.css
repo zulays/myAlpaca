@@ -102,11 +102,6 @@
 /* ----------------------- Media Queries  - Mobile-----------------------  */
 @media only screen and (min-width: 320px) and (max-width: 424px){
   
-  /* .login-body{
-  margin: 30px;
-  } */
-
-
   .login-title{
     font-size: 22px;
     line-height: 26px;

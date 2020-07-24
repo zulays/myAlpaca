@@ -23,12 +23,10 @@
   float: left;
   width: 430px;
   height: 230px;
-  padding: 20px;
   font-family: "Roboto";
   border: 20px solid #ffffff;
   padding: 0.5rem;
-  text-align: left;
-  vertical-align: bottom;
+  position: relative;
 }
 
 .row:after{
@@ -39,20 +37,12 @@
 
 .image-text {
   font-size: 48px;
-  line-height: 56px;
   font-weight: 600;
   color: #ffffff;
+  text-align: left;
+  bottom: -15%;
+  position: absolute;
 }
-
-
-/* .image-text h1{
-  font-size: 48px;
-  line-height: 56px;
-  font-weight: 600;
-  color: #ffffff;
-  vertical-align: bottom;
-} */
-
 
 
 .local-events{
@@ -99,10 +89,6 @@ background-size: cover;
 /* ----------------------- Media Queries  -  Mobile -----------------------  */
 @media only screen and (min-width: 320px) and (max-width: 767px){
 
-  .activities-chart{
-    /* text-align: center; */
-  }
-  
   .local-events,
   .weather,
   .restaurants,
@@ -112,9 +98,8 @@ background-size: cover;
   .culture,
   .shopping{
     float: left;
-    width: 430px;
+    width: 400px;
     height: 230px;
-    padding: 20px;
     font-family: "Roboto";
     border: 20px solid #ffffff;
     padding: 0.5rem;
@@ -132,4 +117,4 @@ background-size: cover;
 
 
 /* ----------------------- Media Queries  - Laptop + Up  -----------------------  */
-@media only screen and (min-width: 1025px) and (max-width: 1280px){}
+@media only screen and (min-width: 1025px) and (max-width: 1920px){}
