@@ -20,7 +20,7 @@ const UserHome = () => {
           <div className="currency"><h1 className="image-text">Currency</h1></div>
         </div>
         <div className="row">
-          <div className="transportation"><h1 className="image-text">Transporation</h1></div>
+          <div className="transportation"><h1 className="image-text">Transportation</h1></div>
           <div className="languages"><h1 className="image-text">Languages</h1></div>
         </div>
         <div className="row">
